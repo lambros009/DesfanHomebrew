@@ -1,0 +1,720 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheOldEmancyofAlvaran",
+				"abbreviation": "OEA",
+				"full": "The Old Emancy of Alvaran",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1614272743,
+		"dateLastModified": 1614272743
+	},
+	"spell": [
+		{
+			"name": "Adapting Flesh",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 4,
+			"school": "T",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You reach into your body and momentarily unlock its potential. For the duration of this spell, you can use your reaction when you take damage to fortify yourself against that element. You gain resistance to that damage type until the start of your next turn."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Alvaran Heart",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Alvaran Smite",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 3,
+			"school": "N",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit a creature with a weapon attack before this spell ends, the weapon pulses with dark power. The attack deals an extra {@damage 2d8} necrotic damage to the target, and it must succeed on a Constitution or its physical vitality is impaired. Until the spell ends, the target has disadvantage on any Constitution saving throws made to resist a condition, and whenever the target takes necrotic damage, it takes an extra amount of necrotic damage equal to your spellcasting modifier. A creature affected by this spell can repeat the saving throw at the end of each of its turns, ending the effects on itself on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the extra damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Vitality",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Hold",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 1,
+			"school": "T",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You twist your hands, attempting to control the blood of a creature within range. The creature must succeed on a Constitution saving throw, or its speed becomes 0 for the duration of the spell. An affected creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success. Undead creatures, as well as creatures that don't have blood, are immune to this effect.",
+				"When you see a creature within range moving, you can cast this spell as a reaction if you expend a number of your hitdice equal to the level of this spell, targeting the creature or creatures you see moving."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them. When you do so, you must concentrate on the spell to maintain its duration."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Alvaran Heart",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Vitality",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodbend",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 2,
+			"school": "T",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you see a creature within range make a weapon attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You briefly exert your control over a creature's body as it makes its strike. The target must succeed on a Strength saving throw, or you can direct its attack to any creature of your choice within its reach. The creature makes that attack with disadvantage. Undead and construct creatures, as well as creatures that don't have blood, are immune to this effect."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Vitality",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Bone Break",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 5,
+			"school": "T",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of chipped bone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You reach out and snap the bones of a creature you can see within range. The target must succeed on a Constitution saving throw or its bones snap in horrific angles. On a failed save, the creature takes {@damage 4d8} bludgeoning damage, and you can choose whether to break the bones of its legs or its arms. If you break the bones of its arms, the creature has disadvantage on weapon attack rolls and takes bludgeoning damage equal to your spellcasting ability modifier whenever it makes a weapon attack. If you break the bones of its legs, the creature falls {@condition prone} and is unable to stand up. These effects persist until the creature receives healing equal to half of its maximum hitpoint score. On a successful save, the creature takes half as much damage, but is otherwise unaffected."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d8} for each slot level above 5th. If you cast this spell using a spell slot of 8th level or higher, the target suffers the effects of the bone breaking even if it succeeds on its saving throw."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Alvaran Heart",
+							"source": "TheOldEmancyofAlvaran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Consume Life Force",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a humanoid organ gilded in naquatl worth 300gp",
+					"cost": 30000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You siphon the life force of an {@condition incapacitated} creature within range and absorb it, enhancing your own life force with it. If the creature remains {@condition incapacitated} throughout the casting of the spell, it must make a Constitution saving throw at the end of its casting. Roll {@dice 3d8}. On a failure, the creature's maximum hitpoints are permanently decreased by an equal amount, and your maximum hitpoints are increased by that same amount until the end of this spell. On a success, the creature loses — and you gain — half as many maximum hitpoints.",
+				"If the number you roll is higher that the creature's maximum hitpoint score, your maximum hitpoints are increased by an amount equal to the creature's maximum hitpoints. When a creature's maximum hitpoints are reduced to 0 in this way, it dies."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the roll increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Expose Wound",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 2,
+			"school": "N",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You attempt to viciously exacerbate a creature's open wound. If a creature of your choice that you can see within range is below its maximum hitpoints, it must succeed on a Constitution saving throw. On a failure, the creature takes {@damage 2d10} necrotic damage and its wound festers with necrotic energy. The next time a creature hits it with a melee weapon attack before the end of your next turn, roll {@dice 2d6}. You can choose whether the wounded creature takes necrotic damage equal to the roll, or the creature that hit the target regains hitpoints equal to half of the roll, as the attacker leeches its life force. If the wounded creature is undead, or does not have flesh and blood, you can't choose for the attacker to regain hitpoints in this way."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d10} and the roll increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Vitality",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Hollowing Smite",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 2,
+			"school": "N",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit a creature with a weapon attack before this spell ends, the weapon pulses with dark power. The attack deals an extra {@damage 2d6} necrotic damage to the target, and the target can't regain hitpoints until this spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Life Siphon",
+			"source": "TheOldEmancyofAlvaran",
+			"level": 3,
+			"school": "N",
+			"subschools": [
+				"alvaran"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "muscle from a humanoid heart"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You tap into the life force of a creature you can see within range. Whenever parts of its vital energy are lost to the ether, you can siphon the remains into yourself. The creature must succeed on a Constitution saving throw, or be affected by this spell unless it is undead. For the duration of this spell, you regain {@dice 1d6} hitpoints whenever the creature you have tapped into takes damage. If you ever end your turn more than 30 ft. away from your target, the spell ends."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Alvaran Heart",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		}
+	]
+}
