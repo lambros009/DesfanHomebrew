@@ -1,0 +1,642 @@
+{
+	"siteVersion": "1.127.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheMazzik",
+				"abbreviation": "MAZ",
+				"full": "TheMazzik",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1619107941,
+		"dateLastModified": 1619107941
+	},
+	"monster": [
+		{
+			"name": "Mazzik",
+			"source": "TheMazzik",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 15",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 8,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"intimidation": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				{
+					"special": "poison; bludgeoning, piercing, and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Mazzik's spellcasting ability is Charisma (spell save {@dc 14}, spell attack +6). It can innately cast the following spells, requiring no components:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell phantasmal force}"
+						],
+						"1e": [
+							"{@spell fear}",
+							"{@spell phantasmal killer}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Mazzik can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The Mazzik has advantage on saving throws against any effect that turns undead. If a creature {@condition frightened} by the Mazzik attempts to turn it and fails, the creature also takes psychic damage equal to its level."
+					]
+				},
+				{
+					"name": "Haunt",
+					"entries": [
+						"The creature haunted by the Mazzik acts as a beacon for it and its powers. The Mazzik always knows the haunted creature's location, and any creatures within 5 feet of the haunted creature have disadvantage on saving throws imposed by the Mazzik."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The Mazzik is {@condition invisible} as long as it hasn't taken any damage since the end of its last turn, and it has more than half of its hitpoints. This invisibility doesn't end if it attacks."
+					]
+				},
+				{
+					"name": "Burn Its True Face",
+					"entries": [
+						"If the Mazzik takes damage that reduces it to 0 hitpoints, it is reduced to 1 hitpoint instead, unless it takes fire damage from that attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mazzik makes two nail attacks."
+					]
+				},
+				{
+					"name": "Nails",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) necrotic damage."
+					]
+				},
+				{
+					"name": "Cursed Stare {@recharge 5}",
+					"entries": [
+						"If the Mazzik is {@condition invisible}, it can target a creature it can see with its malicious eye. The creature must make a Wisdom (Perception) check contested against the Mazzik's Dexterity (Stealth) check. If the creature fails to notice the Mazzik and determine where the stare is coming from, it feels an ominous presence burrowing into its soul, taking 14 ({@damage 4d6}) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reveal The True Face",
+					"entries": [
+						"Once the Mazzik takes damage that reduces it to half of its maximum hitpoints or less, it can use its reaction to turn its head and reveal its true face as it becomes visible. Any creatures that can see it within 60 feet must succeed on a {@dc 15} Wisdom saving throw or take 21 ({@damage 6d6}) psychic damage and become {@condition frightened}. A creature takes half as much damage on a success, and doesn't become {@condition frightened}."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Nails",
+					"entries": [
+						"The Mazzik makes a Nails attack. Before or after doing so, it can move up to its speed if it is {@condition invisible}."
+					]
+				},
+				{
+					"name": "Unsettling Presence (Costs 2 Actions)",
+					"entries": [
+						"The Mazzik attempts to frighten any creatures near it. Any creatures within 10 feet of the Mazzik must succeed of a {@dc 15} Wisdom saving throw or become {@condition frightened} of the Mazzik until the end of their next turn."
+					]
+				},
+				{
+					"name": "Paralyzing Whisper (Costs 3 Actions)",
+					"entries": [
+						"The Mazzik targets a creature within 60 feet of it that is {@condition frightened} of it. The creature must succeed on a {@dc 15} Wisdom saving throw or become {@condition paralyzed} for 1 minute. The target can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success. The Mazzik cannot use this ability while it is {@condition invisible}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/mM22pT1.png",
+			"traitTags": [
+				"Incorporeal Movement",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Tobin's Poltergeist",
+			"source": "TheMazzik",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "10d8",
+				"average": 45
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 16,
+			"con": 11,
+			"int": 10,
+			"wis": 10,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Tobin's poltergeist can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"Tobin's poltergeist is {@condition invisible}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Telekinetic Thrust",
+					"entries": [
+						"The poltergeist targets a creature or unattended object within 30 feet of it. A creature must be Medium or smaller to be affected by this magic, and an object can weigh up to 150 pounds.",
+						"If the target is a creature, the poltergeist makes a Charisma check contested by the target's Strength check. If the poltergeist wins the contest, the poltergeist grapples the creature and restrains it.",
+						"The poltergeist can use its bonus action to move a creature it has {@condition restrained} in this way up to 30 feet (including upward), and crush it. A crushed creature must succeed on a {@dc 13} Strength saving throw or take 10 ({@damage 2d6 + 3}) bludgeoning damage, or half as much damage on a success. A {@condition restrained} creature can use its action to attempt to free itself by making a Strength check contested with Tobin's Charisma check."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Possession",
+					"entries": [
+						"When Tobin reduces a creature he is grappling with his Telekinetic Thrust to 0 hit points, he can possess it. Tobin then disappears, and the target loses control of its body. Tobin now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, and Charisma. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Poltergeist.png?v=1.127.1",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			]
+		},
+		{
+			"name": "Anna's Ghost",
+			"source": "TheMazzik",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "10d8",
+				"average": 45
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 13,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 17,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The anna's ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Aura of Sadness",
+					"entries": [
+						"Anna radiates an aura of debilitating sadness around her. When a non-undead creature of her choice starts its turn within 5 feet of her, it must succeed on a {@dc 13} Charisma saving throw. On a failure, the creature has disadvantage on the next attack roll it makes, and its speed is reduced by 10 feet for 1 minute. If a creature's speed is reduced to 0 in this way, it becomes {@condition incapacitated} and Anna can use her reaction to possess it. The effects of her aura then end."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Withering Touch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 3}) necrotic damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Possession",
+					"entries": [
+						"Anna targets an {@condition incapacitated} creature within 5 feet of her which has its speed reduced to 0, and possesses it. Anna then disappears, and the target loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "It Follows",
+					"entries": [
+						"When a creature leaves Anna's reach, she can use her reaction to follow the creature, moving up to her speed towards it."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/eY8GdxQ.png",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Markham",
+			"source": "TheMazzik",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 16,
+			"int": 10,
+			"wis": 18,
+			"cha": 17,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"history": "+2",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Markham's innate spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell augury}",
+						"{@spell chill touch}",
+						"{@spell spare the dying}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cure wounds}",
+							"{@spell inflict wounds}",
+							"{@spell shield of faith}"
+						],
+						"1e": [
+							"{@spell blindness/deafness}",
+							"{@spell lesser restoration}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Markham can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Veil of the Living",
+					"entries": [
+						"During the day Markham appears much as he did in life and loses his Incorporeal Movement trait, his Touch of Forgetfulness action, and his immunity to being {@condition grappled} and {@condition restrained}. He retains all other statistics.",
+						"When the sun sets or when he takes any damage, Markham assumes his undead form, and has all of his listed statistics. Any creature witnessing this transformation must succeed on a {@dc 13} Wisdom saving throw or become {@condition frightened} until the end of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Touch of Forgetfulness",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) psychic damage. A target hit by this attack must succeed on a {@dc 13} Wisdom saving throw or forget any or all events that happened up to 5 minutes prior to this attack, as if affected by the modify memory spell.",
+						"If the creature is reduced to 0 hit points by this attack, and it also failed its save, Markham possesses it. Markham then disappears, and the target loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, and Charisma. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/CZrmWci.png",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		}
+	]
+}
