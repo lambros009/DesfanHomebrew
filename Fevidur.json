@@ -1,0 +1,370 @@
+{
+	"siteVersion": "1.127.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Fevidur",
+				"abbreviation": "Fev",
+				"full": "Fevidur",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1619538190,
+		"dateLastModified": 1619538190
+	},
+	"monster": [
+		{
+			"name": "Feylith Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 19,
+			"save": {
+				"dex": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Sylvan",
+				"Feylith"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Charisma (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell arm of the wild|SproutingChaos}",
+						"{@spell engulfing thorns|SproutingChaos}",
+						"{@spell snare|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cloud of spores|SproutingChaos}",
+							"{@spell mind spore|SproutingChaos}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The feylith cerebrovore has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The feylith cerebrovore has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} and {@condition restrained} (escape {@dc 15}) and must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} until this grapple ends. The cerebrovore can also choose to pull the creature up to 5 feet towards it."
+					]
+				},
+				{
+					"name": "Extract Brain",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition poisoned} target {@condition grappled} by the cerebrovore. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the cerebrovore kills the target by extracting and devouring its brain."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"underdark"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained"
+			]
+		},
+		{
+			"name": "Quickling",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "13d4 + 13",
+				"average": 45
+			},
+			"speed": {
+				"walk": 120
+			},
+			"str": 4,
+			"dex": 23,
+			"con": 13,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+9",
+				"sleight of hand": "+9",
+				"acrobatics": "+9",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Feylith"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "State Flux",
+					"entries": [
+						"The quickling has disadvantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Blurred Movement",
+					"entries": [
+						"Attack rolls against the quickling have disadvantage unless the quickling is {@condition incapacitated} or {@condition restrained}. Additionally, The quickling is so light that it doesn't take any damage when it falls. It can also jump up to half its movement speed with a long jump, and 20 feet with a high jump."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the quickling instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The quickling makes three dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Feylith Lasso",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 30 ft., one target. {@h}13 ({@damage 3d8}) radiant damage, and the target is {@condition restrained} (escape {@dc 14}). While the target is {@condition restrained}, the quickling can use its bonus action to cause it to take the same damage. The quickling can only have one target {@condition restrained} at a time with its lasso."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://5e.tools/img/VGM/Quickling.png?v=1.127.2",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Feylith Centaur",
+			"source": "Fevidur",
+			"size": "L",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "12d10 + 24",
+				"average": 90
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"cha": "+5",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+9",
+				"intimidation": "+5",
+				"stealth": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 ({@damage 3d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Precise Strikes",
+					"entries": [
+						"When the centaur attacks a creature that has 0 movement speed, it automatically hits with its attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The centaur makes three pike attacks or two longbow attacks."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage. On a hit, the centaur can choose to knock the target {@condition prone} instead of deal damage to it."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Entangling Arrow (3/day)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}16 ({@damage 3d8 + 3}) piercing damage and the creature's speed is reduced to 0 as vines wrap around its legs. A creature can use its action to make a {@dc 16} Strength check, removing the vines on a success."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://i.imgur.com/KQzwVrX.png",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			]
+		}
+	]
+}
