@@ -1,0 +1,249 @@
+{
+	"siteVersion": "1.127.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "AngelsandHeralds",
+				"abbreviation": "AH",
+				"full": "Angels and Heralds",
+				"url": "https://www.gmbinder.com/share/-MSG4lcizSQSjWI-iBhh",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1621008952,
+		"dateLastModified": 1621008952
+	},
+	"monster": [
+		{
+			"name": "Soul Hunter",
+			"source": "AngelsandHeralds",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"breastplate, 19 with shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d8 + 38",
+				"average": 123
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+7",
+				"deception": "+8",
+				"perception": "+6",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Celestial and one other language"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warlock is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell booming blade|TCE}",
+								"{@spell mind sliver|TCE}",
+								"{@spell sapping sting|EGW}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell banishing smite}",
+								"{@spell bestow curse}",
+								"{@spell branding smite}",
+								"{@spell dominate person}",
+								"{@spell dream}",
+								"{@spell far step|XGE}",
+								"{@spell hold person}",
+								"{@spell ice storm}",
+								"{@spell phantasmal killer}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 16}):"
+					],
+					"will": [
+						"{@spell alter self}",
+						"{@spell scrying}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell commune}",
+							"{@spell compulsion}",
+							"{@spell dimension door}",
+							"{@spell invisibility}",
+							"{@spell soul hunter's haunting|AngelsandHeralds}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Frightful Demise",
+					"entries": [
+						"When the soul hunter reduces a creature to 0 hitpoints, any creatures within 30 feet of the soul hunter and the {@condition unconscious} creature must succeed on a {@dc 16} Wisdom saving throw, or become {@condition frightened} of the soul hunter for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Soul Quarry",
+					"entries": [
+						"The soul hunter has a creature as its quarry. Its goal is to capture that creature's soul. Any attack roll the soul hunter makes against its quarry is a critical hit on a roll of 19 or 20 on the {@dice d20}, and if the soul hunter reduces its quarry to 0 hitpoints, it gains 30 temporary hitpoints."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The soul hunter makes 3 attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}9 ({@damage 1d10 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Capture Soul",
+					"entries": [
+						"The soul hunter uses an an action to capture the soul of a dying creature within 5 feet of it. The creature must be {@condition incapacitated} and at 0 hitpoints. The creature dies, and its soul is transferred to the fog of lost souls."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The soul hunter can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Armor of Hexes",
+					"entries": [
+						"When the quarry of the soul hunter hits the soul hunter with an attack, the soul hunter can use its reaction to roll {@dice 1d6}. On a 4 or higher, the attack misses the soul hunter, regardless of its roll."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"he soul hunter makes an attack of its choice."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The soul hunter moves up to its movement speed without provoking attacks of opportunity."
+					]
+				},
+				{
+					"name": "Yriyan Drain (Costs 2 Actions)",
+					"entries": [
+						"Each creature of the soul hunter's choice within 30 feet of it must succeed on a {@dc 16} Wisdom saving throw, or become slowed, as per the slow spell, until the end of their next turn."
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 3 Actions)",
+					"entries": [
+						"The soul hunter casts a spell or uses its etherealness action."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/SpQIsCS.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"X"
+			],
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		}
+	]
+}
