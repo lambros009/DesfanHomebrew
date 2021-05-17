@@ -1,0 +1,38 @@
+{
+"name": "kibbles-generic-spells",
+"title": "Kibbles' Generic Spell",
+"description": "An expanded pack of Elemental Spells",
+"author": "KibblesTasty",
+"version": "1.1.0",
+"minimumCoreVersion": "0.6.0",
+"manifest": "https://raw.githubusercontent.com/KibblesTasty/kibbles-generic-spells/main/module.json",
+"download": "https://github.com/KibblesTasty/kibbles-generic-spells/releases/download/archive/kibbles-generic-spells-main.zip",
+"packs": [
+			{
+			"name": "kibbles-generic-spells",
+			"label": "Kibbles' Generic Spells",
+			"path": "packs/kibbles-generic-spells.db",
+			"entity": "Item",
+			"module": "kibbles-generic-spells"
+			}
+		],
+"dependencies": [
+			{
+			  "name": "dnd5e",
+			  "type": "system"
+			}
+		],
+"languages": [
+			{
+			  "lang": "en",
+			  "name": "English",
+			  "path": "lang/en.json"
+			}
+		],
+"authors": [
+			{
+			  "name": "KibblesTasty",
+			  "url": "https://kthomebrew.com"
+			}
+		]
+}
