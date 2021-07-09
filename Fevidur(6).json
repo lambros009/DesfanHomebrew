@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.129.0",
+	"siteVersion": "1.131.6",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1622196589,
-		"dateLastModified": 1622196589
+		"dateAdded": 1625829540,
+		"dateLastModified": 1625829540
 	},
 	"monster": [
 		{
@@ -1734,6 +1734,1078 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Darahl",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "35d8 + 105",
+				"average": 262
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"cha": "+10",
+				"wis": "+8",
+				"con": "+9",
+				"dex": "+9"
+			},
+			"skill": {
+				"athletics": "+11",
+				"acrobatics": "+9",
+				"insight": "+14",
+				"intimidation": "+10",
+				"perception": "+14"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 60 ft."
+			],
+			"passive": 24,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Aura of Presence",
+					"entries": [
+						"Any creature of Darahl's choice that begins its turn within 30 feet of him must make a {@dc 18} Charisma saving throw. On a failure, the creature is so overwhelmed by Darahl's presence and can only see him. Until the start of its next turn, it is considered to be {@condition blinded} in regards to any creature within 30 feet of Darahl, other than Darahl."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Darahl has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Inspiring Victor",
+					"entries": [
+						"Darahl has a pool of inspiration dice that fills each time he is victorious in a clash of wills. These dice are {@dice d10}s and a die is added each time he forces one or more creatures to fail a saving throw or a contested ability check, he lands a critical hit, or he reduces a creature to 0 hit points. The pool can have a maximum of 5 inspiration dice, and resets a minute after the last inspiration die was added.",
+						"Darahl can use these inspiration dice and add them to a roll of his choice that he or an ally within 30 feet of him makes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Darahl makes three arm branch attacks or makes one arm javelin attack."
+					]
+				},
+				{
+					"name": "Arm Branch",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage, and Darahl can choose to grapple the target if it is a Large or smaller creature (escape {@dc 19})."
+					]
+				},
+				{
+					"name": "Arm Javelin",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/120 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, plus 18 ({@damage 4d8}) radiant damage, and the creature is surrounded by bright, colorful light for 1 minute or until the effect is dispelled.",
+						"For the duration, checks to track the creature are made with advantage. When Darahl or one of his allies hits the creature, they can trigger the effect to dispel, dealing 18 ({@damage 4d8}) radiant damage to the creature."
+					]
+				},
+				{
+					"name": "Victorious Transformation",
+					"entries": [
+						"Darahl expends 5 inspiration dice to fill himself with transcended confidence. Any creatures within 30 feet of him immediately take 21 ({@damage 6d6}) radiant damage and are {@condition charmed} by him until the end of their next turn.",
+						"This transformation lasts for 1 minute, or until Darahl falls {@condition unconscious}. For the duration, Darahl can make an additional Arm Branch attack with his multiattack, has advantage on all saving throws, and gains 2 inspiration dice at the start of each of his turns. Additionally, creatures have disadvantage on saving throws made to resist his aura of presence, and on a failure, a creature also becomes {@condition charmed} of Darahl while {@condition blinded}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Overwhelming Will",
+					"entries": [
+						"When a creature within 30 feet of Darahl makes a saving throw, Darahl can project his will through his gaze towards the creature, imposing himself on it. The creature makes the saving throw with disadvantage, and if they fail the saving throw, they become {@condition charmed} by Darahl until the end of their next turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Arm Branch",
+					"entries": [
+						"Darahl makes one Arm Branch attack. On a hit, the creature must succeed on a {@dc 19} Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"name": "Legendary Renewal",
+					"entries": [
+						"If Darahl has any inspiration dice, he can spend one or more inspiration dice to regain his reaction. For each inspiration die he spends, Darahl regains {@dice 1d10 + 3} hit points. Any creatures that see this willful change while within 30 feet of Darahl must succeed on a {@dc 18} Charisma saving throw or become {@condition charmed} by him until the end of their next turn."
+					]
+				},
+				{
+					"name": "Teleport (Costs 2 Actions)",
+					"entries": [
+						"Darahl teleports to a point he can see within 60 feet. Any creatures of his choice within 10 feet of his current or target location must succeed on a {@dc 18} Constitution saving throw or take 22 ({@damage 5d8}) force damage, taking half as much damage on a success."
+					]
+				},
+				{
+					"name": "Skewering Branch (Costs 3 Actions)",
+					"entries": [
+						"Darahl thrusts his arm forward, piercing any creature standing in his way. Any creature in a 60-foot line from Darahl must succeed on a {@dc 19} Dexterity saving throw or take 42 ({@damage 12d6}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/lA94eTN.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			]
+		},
+		{
+			"name": "Archmage Eruthil",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Weavemane Cloak"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"int": "+11",
+				"wis": "+10",
+				"con": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+17",
+				"nature": "+17",
+				"investigation": "+11",
+				"insight": "+10",
+				"history": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"force"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Archmage Eruthil is a 20th level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). He can cast shield and enhance ability at will, and has the following spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell armor of Agathys}",
+								"{@spell faerie fire}",
+								"{@spell magic missile}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell ray of enfeeblement}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell ionizing wind|ATLAS}",
+								"{@spell sickening radiance|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell energy barrage|YAG}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage}",
+								"{@spell prismatic spray}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell lightning tether|TheElementalSpellbookSpellsofIceFireandLightning}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell foresight}",
+								"{@spell prismatic wall}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Weavemane Cloak",
+					"entries": [
+						"Archmage Eruthil possesses a Weavemane Cloak. While wearing it, he gains the following benefits:",
+						"- If he isn't wearing armor, his base Armor Class is 15 + his Dexterity modifier.",
+						"- He has advantage on saving throws against spells and other magical effects.",
+						"- He has resistance to force damage and damage from spells.",
+						"- His spell save DC and spell attack bonus each increase by 2.",
+						"- He can use his Weavemane Absorption reaction."
+					]
+				},
+				{
+					"name": "Contigency",
+					"entries": [
+						"Archmage Eruthil always has contingency cast on himself. When he enters combat, armor of Agathys is cast on him at 5th level. This casting of the spell deals force damage instead of cold."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Weave Bolt",
+					"entries": [
+						"{@atk rs} {@hit 13} to hit, range 60/120 ft., one target. {@h}22 ({@damage 4d10}) force damage. If the target is concentrating on a spell, it has disadvantage on the concentration check it makes as a result of taking this damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Weavemane Absorption",
+					"entries": [
+						"When Archmage Eruthil succeeds on a saving throw against a spell, he can use his reaction to gain 20 temporary hitpoints and cause the cloak to expand around him. Any creatures of his choice within 20 feet of him must make a {@dc 17} Constitution saving throw. On a failure, they take {@damage 1d10} force damage for each level of the spell, or half as much damage on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weave Bolt",
+					"entries": [
+						"Archmage Eruthil makes a weave bolt attack."
+					]
+				},
+				{
+					"name": "Weavemane Shroud (Costs 2 Actions)",
+					"entries": [
+						"Archmage Eruthil causes his weavemane cloak to wrap around him. Until the start of his next turn, Eruthil completely negates the damage from the next attack that hits him, and instead transfers the damage back to the creature that dealt it."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"Archmage Eruthil casts a spell of 5th level or lower, or activates the properties of an active spell, if an action or bonus action is normally required."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/aW3MqXH.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Cultist of Vengeance",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"deception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Acid Body",
+					"entries": [
+						"The cultist has advantage on checks and saving throws made to avoid or escape a grapple.",
+						"Additionally, when the cultist is reduced to 0 hitpoints, every creature within 15 feet of it takes 13 ({@damage 4d6}) acid damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Acidic Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d6 + 2}) acid damage, and the target must make a {@dc 13} Constitution saving throw. On a failure, the target is {@condition poisoned} for 1 minute, and while {@condition poisoned}, its movement speed is halved and it takes 10 ({@damage 3d6}) acid damage at the start of each of its turns.",
+						"A target can repeat the saving throw at the end of its of its turns. On a failure, it takes another 10 ({@damage 3d6}) acid damage. On a success, the effect ends."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/GCsJSWV.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Devolved Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 3,
+			"wis": 14,
+			"cha": 1,
+			"save": {
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+9"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The devolved cerebrovore can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Poisonous Contact",
+					"entries": [
+						"A creature that touches the cerebrovore or starts its turn {@condition grappled} by it must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Terrain Mutability",
+					"entries": [
+						"The area in a 15-foot radius around the devolved cerebrovore is considered to be difficult terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devolved cerebrovore makes two pseudopod attacks and uses its Reel once."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target must succeed on a {@dc 15} Strength saving throw or be {@condition grappled} (escape {@dc 15})."
+					]
+				},
+				{
+					"name": "Reel",
+					"entries": [
+						"Any creatures {@condition grappled} by the cerebrovore must succeed on a {@dc 15} Strength saving throw, or be pulled up to 15 feet towards it."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/RrDEjQU.png",
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Devolved Cerebrovore Swamp",
+			"source": "Fevidur",
+			"size": "G",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "15d20 + 75",
+				"average": 232
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 20,
+			"dex": 6,
+			"con": 20,
+			"int": 3,
+			"wis": 12,
+			"cha": 2,
+			"save": {
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"grappled",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The devolved cerebrovore swamp can move through a space as narrow as 1 inch wide without squeezing and can occupy the same space as other creatures."
+					]
+				},
+				{
+					"name": "Sticky",
+					"entries": [
+						"A creature that starts its turn in the cerebrovore swamp's area must succeed on a {@dc 17} Strength saving throw or be {@condition grappled} (escape {@dc 17}).",
+						"A {@condition grappled} creature that fails this saving throw is dragged down into the bog and becomes engulfed by the cerebrovore swamp. The engulfed creature can't breathe, is {@condition restrained}, and takes 21 (6d6) acid damage at the start of each of the swamp's turns. When the swamp moves, the engulfed creature moves with it.",
+						"An engulfed creature can try to escape by taking an action to make a {@dc 15} Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the swamp. Alternatively, a creature within 5 feet of the swamp can take an action to pull a creature out of the swamp. Doing so requires a successful {@dc 15} Strength check, and the creature making the attempt takes 10 (3d6) acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Uldive Fungus",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d4 + 33",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 3,
+			"dex": 22,
+			"con": 16,
+			"int": 4,
+			"wis": 12,
+			"cha": 3,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"stealth": "+10"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the uldive fungus remains motionless, it is indistinguishable from a naturally occurring fungus on cave walls."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fungal Spray",
+					"entries": [
+						"The uldive fungus lets out a cloud of spores in a 10-foot radius around itself. Any creatures in the area must succeed on a {@dc 13} Constitution saving throw, or take 10 (3d6) poison damage and become {@condition poisoned} for 1 minute. On a successful save, a creature takes half as much damage. When the uldive fungus uses this ability, it can choose to expend a number of its hitpoints. For every 10 hitpoints it expends, the DC of the save is increased by 1, the poison damage is increased by 1d6, and the radius of the spread increases by 5 feet.",
+						"A {@condition poisoned} creature repeats the saving throw at the end of each of its turns. On a failed save, its current hitpoints are reduced by 10, and it spews out an uldive fungus with 10 hitpoints. When the creature succeeds on three of these saves, it is longer {@condition poisoned}."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/PFOjFN0.png",
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Uldive Fungus Healer",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "8d4 + 24",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 3,
+			"dex": 18,
+			"con": 16,
+			"int": 3,
+			"wis": 16,
+			"cha": 2,
+			"save": {
+				"con": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the uldive fungus healer remains motionless, it is indistinguishable from natural cave fungi."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fungal Spray",
+					"entries": [
+						"The uldive fungus lets out a cloud of spores in a 15-foot radius around itself. Any non-fungal creatures in the area must succeed on a {@dc 13} Constitution saving throw, or take 10 (3d6) poison damage and suffer disadvantage on their next saving throw. Any fungi within the area of effect instead regain hitpoints equal to twice the damage rolled.",
+						"The DC of this ability increases by 1 for each other fungal creature within the area of effect."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/xEYEAET.png",
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE"
+			]
+		},
+		{
+			"name": "Aquatic Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 18,
+			"cha": 11,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts} (range 1000 feet)",
+						"psychic anchor"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aquatic cerebrovore has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The aquatic cerebrovore has advantage on attack rolls against any creature it has surprised."
+					]
+				},
+				{
+					"name": "Carrier",
+					"entries": [
+						"The cerebrovore can move its full speed while grappling a creature with its tentacles. Additionally, when a creature starts its turn {@condition grappled} by a cerebrovore it takes 4 psychic damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cerebrovore makes two tentacle attacks."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 30 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage, and the target is {@condition grappled} and {@condition restrained}. The cerebrovore can grapple up to two creatures at a time in this way."
+					]
+				},
+				{
+					"name": "Mind Blast {@recharge 5}",
+					"entries": [
+						"The cerebrovore magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/VGM/Kraken%20Priest.png",
+			"traitTags": [
+				"Ambusher",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Abolethic Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"wis": "+7",
+				"con": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"stunned"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"psychic anchor"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The cerebrovore is a 10th-level spellcaster. Its spellcasting ability is Wisdom (save {@dc 15}, +7 to hit with spell attacks). The cerebrovore has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell crushing curse|DMS}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell mind sliver|TCE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell dissonant whispers}",
+								"Figgly's exploding squid",
+								"rime rhyme"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell mind spike|XGE}",
+								"{@spell Tasha's mind whip|TCE}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell clairvoyance}",
+								"{@spell sending}",
+								"{@spell sleet storm}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"crushing depths",
+								"{@spell locate creature}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"meandering torrent",
+								"{@spell synaptic static|XGE}"
+							],
+							"slots": 0
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aquatic cerebrovore linked has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Abolethic Mind",
+					"entries": [
+						"The cerebrovore has advantage on Intelligence, Wisdom, Charisma saving throws, and checks made to maintain concentration.",
+						"Any creature that reads or attempts to influence the mind of the cerebrovore takes 13 (3d8) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Abolethic Mindtap",
+					"entries": [
+						"When a creature that the cerebrovore can see within 60 feet of it fails an Intelligence, Wisdom or Charisma saving throw, the cerebrovore can use its reaction to deal 13 (3d8) psychic damage to the creature."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/GoS/Skum.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
 			]
 		}
 	]
