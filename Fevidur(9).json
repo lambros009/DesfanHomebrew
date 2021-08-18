@@ -1,0 +1,4198 @@
+{
+	"siteVersion": "1.134.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Fevidur",
+				"abbreviation": "Fev",
+				"full": "Fevidur",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1629259638,
+		"dateLastModified": 1629259638
+	},
+	"monster": [
+		{
+			"name": "Feylith Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 19,
+			"save": {
+				"dex": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Sylvan",
+				"Feylith"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Charisma (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell arm of the wild|SproutingChaos}",
+						"{@spell engulfing thorns|SproutingChaos}",
+						"{@spell snare|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cloud of spores|SproutingChaos}",
+							"{@spell invisibility}",
+							"{@spell mind spore|SproutingChaos}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The feylith cerebrovore has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The feylith cerebrovore has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} and {@condition restrained} (escape {@dc 15}) and must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} until this grapple ends. The cerebrovore can also choose to pull the creature up to 5 feet towards it."
+					]
+				},
+				{
+					"name": "Extract Brain",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition poisoned} target {@condition grappled} by the cerebrovore. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the cerebrovore kills the target by extracting and devouring its brain."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/RrDEjQU.png",
+			"traitTags": [
+				"Ambusher",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained"
+			]
+		},
+		{
+			"name": "Quickling",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "13d4 + 13",
+				"average": 45
+			},
+			"speed": {
+				"walk": 120
+			},
+			"str": 4,
+			"dex": 23,
+			"con": 13,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+9",
+				"sleight of hand": "+9",
+				"acrobatics": "+9",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Feylith"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "State Flux",
+					"entries": [
+						"The quickling has disadvantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Blurred Movement",
+					"entries": [
+						"Attack rolls against the quickling have disadvantage unless the quickling is {@condition incapacitated} or {@condition restrained}. Additionally, The quickling is so light that it doesn't take any damage when it falls. It can also jump up to half its movement speed with a long jump, and 20 feet with a high jump."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the quickling instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The quickling makes three dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Feylith Lasso",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 30 ft., one target. {@h}13 ({@damage 3d8}) radiant damage, and the target is {@condition restrained} (escape {@dc 14}). While the target is {@condition restrained}, the quickling can use its bonus action to cause it to take the same damage. The quickling can only have one target {@condition restrained} at a time with its lasso."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://5e.tools/img/VGM/Quickling.png?v=1.127.2",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Feylith Centaur",
+			"source": "Fevidur",
+			"size": "L",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "12d10 + 24",
+				"average": 90
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"cha": "+5",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+9",
+				"intimidation": "+5",
+				"stealth": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 ({@damage 3d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Precise Strikes",
+					"entries": [
+						"When the centaur attacks a creature that has 0 movement speed, it automatically hits with its attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The centaur makes three pike attacks or two longbow attacks."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage. On a hit, the centaur can choose to knock the target {@condition prone} instead of deal damage to it."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Entangling Arrow (3/day)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}16 ({@damage 3d8 + 3}) piercing damage and the creature's speed is reduced to 0 as vines wrap around its legs. A creature can use its action to make a {@dc 16} Strength check, removing the vines on a success."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://i.imgur.com/KQzwVrX.png",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Queen Thiala Ishtar",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"condition": "when wearing her amulet"
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 16,
+			"int": 18,
+			"wis": 20,
+			"cha": 27,
+			"save": {
+				"wis": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"deception": "+15",
+				"intimidation": "+15",
+				"insight": "+19",
+				"perception": "+19",
+				"persuasion": "+15"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 29,
+			"resist": [
+				"psychic",
+				"radiant"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Queen's innate spellcasting ability is Charisma (spell attack +15, spell save {@dc 23}). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell command} (at 5th level)",
+						"{@spell dispel magic}",
+						"{@spell dominate person}",
+						"{@spell hold monster}",
+						"{@spell power word kneel|DMS}",
+						"{@spell power word mute|PowerWordsExpanded}",
+						"{@spell tree strike|SproutingChaos}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blade barrier}",
+							"{@spell bones of the earth|XGE}",
+							"{@spell crown of stars|XGE}",
+							"{@spell delayed blast fireball}",
+							"{@spell prismatic spray}"
+						],
+						"1e": [
+							"{@spell blade of disaster|TCE}",
+							"{@spell dominate monster}",
+							"{@spell meteor swarm}",
+							"{@spell power word pain|XGE}",
+							"{@spell power word stun}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resilience",
+					"entries": [
+						"If Queen Thiala Ishtar is subjected to a magical effect that allows her to make a saving throw to take only half damage, the Queen instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+					]
+				},
+				{
+					"name": "Crystal Amulet",
+					"entries": [
+						"If the Queen is wearing her crystal amulet, she gains a +1 bonus to her AC, gains truesight, her Magical Resilience trait, resistance to psychic and radiant damage, and immunity to the {@condition blinded}, {@condition charmed} and {@condition frightened} conditions."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Queen Thiala Ishtar can't be affected or detected by spells of 4th level or lower unless she wishes to be. She has advantage on saving throws against all other spells and magical effects."
+					]
+				},
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"When a creature that can see the Queen's eyes starts its turn within 30 feet of the Queen, the Queen can force it to make a {@dc 16} Constitution saving throw if the Queen isn't {@condition incapacitated} and can see the creature. A creature that fails the save begins to turn to crystal and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic.",
+						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Queen Thiala makes two attacks with her prime crystal staff."
+					]
+				},
+				{
+					"name": "Prime Crystal Staff",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) bludgeoning damage, plus 22 ({@damage 5d8}) thunder damage."
+					]
+				},
+				{
+					"name": "Crystal Storm {@recharge 5}",
+					"entries": [
+						"Queen Thiala unleases a storm of crystal shards in a 60-foot-cone from her. Any creatures caught in the blast take 66 ({@damage 12d10}) slashing damage, or half as much damage on a successful {@dc 23} Dexterity saving throw."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Queen Thiala can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Queen Thiala regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Staff",
+					"entries": [
+						"Queen Thiala makes an attack with her prime crystal staff."
+					]
+				},
+				{
+					"name": "Prime Crystal Shell (Costs 2 Actions)",
+					"entries": [
+						"When Queen Thiala is hit by an attack or is about to take damage, she can use 2 legendary actions to envelop herself in a shell made of the prime crystal, which protects her until the start of her next turn. For that duration, she is {@condition incapacitated} and immune to all damage. She is considered to have total cover while inside the shell.",
+						"At the start of her next turn, the shell erupts, dealing 21 ({@damage 6d6}) piercing damage to all creatures within 10 feet of her and knocking them 10 feet away from her, where they land {@condition prone}."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"Queen Thiala casts one of her at will spells, or a power word spell."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/AseZPUx.png",
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Feylith Knight",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"wis": "+6",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+6",
+				"intimidation": "+9",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The feylith knight's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell thaumaturgy}",
+						"{@spell tree stride}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cure wounds}",
+							"{@spell shield of faith}"
+						],
+						"1e": [
+							"{@spell destructive wave}",
+							"{@spell punishing smite|COFSA}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Resistance",
+					"entries": [
+						"An aura of protection sheds from the knight in a 10-foot radius around it. Any creatures inside the aura (including itself) cannot be {@condition charmed} or {@condition frightened}, and have advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Aura of Dominance",
+					"entries": [
+						"When a creature inside the knight's aura attempts to cast a spell, the knight can force it to make a {@dc 17} Charisma saving throw. On a failure, the casting of the spell fails."
+					]
+				},
+				{
+					"name": "Adaptive Bark",
+					"entries": [
+						"When the feylith knight takes acid, cold, fire, lightning, necrotic, poison or thunder damage, it can choose to gain resistance to that damage type for 1 minute or until it uses this feature again."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight makes three greatsword attacks or two javelin attacks"
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The knight adds 3 to its AC against an attack that would hit it. If the attack misses, the knight can order a creature under its command to assault its attacker. If the soldier is within 5 feet of the target, it can use its reaction to make a melee weapon attack against it."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Bolstering Command",
+					"entries": [
+						"When a fey creature within 10 feet of the knight that the knight can see fails a saving throw, the knight can expend one legendary action and allow it to reroll the saving throw."
+					]
+				},
+				{
+					"name": "Offensive Decree",
+					"entries": [
+						"The feylith knight directs one of the soldiers under its command within 30 feet of it to make one weapon attack against a target of its choice."
+					]
+				},
+				{
+					"name": "Commanding Presence (Costs 2 Actions)",
+					"entries": [
+						"The feylith knight focuses its will and exudes its authority. Any creatures of its choice within its aura must succeed on a {@dc 17} Charisma saving throw or be affected by the knight's presence. For the next minute, any affected creature has disadvantage on attack rolls against creatures other than the knight. An affected creature also cannot willingly exit the aura of the knight. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. A creature that succeeds on this saving throw is immune to the effect for the next 24 hours."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"The knight casts one of its spells. If the spell normally requires a bonus action to cast, the knight can also immediately make a greatsword attack."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://i.imgur.com/FgO44JW.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Alobar",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 60",
+				"average": 195
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 17,
+			"wis": 10,
+			"cha": 25,
+			"save": {
+				"dex": "+10",
+				"cha": "+13",
+				"wis": "+6"
+			},
+			"skill": {
+				"sleight of hand": "+10",
+				"persuasion": "+13",
+				"deception": "+19",
+				"stealth": "+10",
+				"insight": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Alurian Aura",
+					"entries": [
+						"Any creature of Alobar's choice that starts its turn within 30 feet of him must succeed on a {@dc 21} Charisma saving throw or come under the effects of his Alurian aura. On a failed save, roll {@dice 1d10}. The creature suffers the following effects until the end of its next turn.",
+						"1. The creature comes under the effects of the Tasha's hideous laughter spell.",
+						"2. The creature comes under the effects of the crown of madness spell.",
+						"3. The creature comes under the effects of the confusion spell.",
+						"4. The creature comes under the effects of the phantasmal killer spell.",
+						"5. The creature is {@condition charmed} by Alobar.",
+						"6. The creature is {@condition frightened} by Alobar.",
+						"7. The creature is {@condition stunned}.",
+						"8. The creature becomes mute. It cannot speak or cast spells with verbal components.",
+						"9. The next time the creature takes psychic damage, it takes twice as much damage.",
+						"10. The creature is targeted by the feeblemind spell. If it fails its save, it can repeat it when the duration of this effect elapses, instead of in 30 days.",
+						"Additionally, all creatures within Alobar's aura have disadvantage on concentration checks."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Alobar has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Alobar makes two mental touch attacks. It can substitute any of these attacks with a pummeling gaze attack. Alobar can't target the same creature twice with his pummeling gaze in a turn."
+					]
+				},
+				{
+					"name": "Mental Touch",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) psychic damage. A target that is struck by this attack two or more times in one turn must make a successful {@dc 17} Constitution saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Pummeling Gaze",
+					"entries": [
+						"Alobar targets a creature he can see within 120 feet of him with intense mental energy. A creature must succeed on a {@dc 21} Wisdom saving throw, or take 21 ({@damage 6d6}) psychic damage and be knocked {@condition prone}. A creature affected by Alobar's aura has disadvantage on this saving throw."
+					]
+				},
+				{
+					"name": "Fractosis Plague (1/day)",
+					"entries": [
+						"Alobar casts Fractosis Plague (Spell {@dc 21})"
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} and {@condition restrained} (escape {@dc 15}) and must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} until this grapple ends. The cerebrovore can also choose to pull the creature up to 5 feet towards it."
+					]
+				},
+				{
+					"name": "Extract Brain",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one {@condition poisoned} target {@condition grappled} by the cerebrovore. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the cerebrovore kills the target by extracting and devouring its brain."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/vqr4Acs.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Feylith Champion",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"dex": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"stealth": "+5",
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Feylith"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Adaptive Bark",
+					"entries": [
+						"When the feylith knight takes acid, cold, fire, lightning, necrotic, poison or thunder damage, it can choose to gain resistance to that damage type for 1 minute or until it uses this feature again."
+					]
+				},
+				{
+					"name": "Tree Form",
+					"entries": [
+						"The feylith champion is constantly under the effects of the tree stride spell."
+					]
+				},
+				{
+					"name": "Sharp Leaf",
+					"entries": [
+						"The feylith champion scores a critical hit with its attacks on a roll of 18-20 on the {@dice d20}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The feylith champion makes two greatsword attacks"
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The feylith champion adds 3 to its AC against a melee weapon attack that would hit it."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/0llpnMx.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Feylith Guard",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Sentinel",
+					"entries": [
+						"When a creature enters the reach of the feylith guard, it can make an attack of opportunity against it. Additionally, when the guard hits a creature with an attack of opportunity, that creature's speed is reduced to 0 until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The guard makes three glaive attacks."
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/w3YIFZq.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Fevidur Befuddler",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d4 + 8",
+				"average": 28
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 5,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 10,
+			"cha": 18,
+			"skill": {
+				"sleight of hand": "+5",
+				"stealth": "+7",
+				"survival": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Fevidur"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Arcane Sight",
+					"entries": [
+						"The befuddler can sense the presence of magic within 120 feet of it. When it looks at a creature, it knows whether it has the capacity to cast spells."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The fevidur befuddler has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mage Hand",
+					"entries": [
+						"The befuddler can cast mage hand at will, and can make the arcane hand {@condition invisible}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The befuddler can make two attacks with its mage hand. If the mage hand is {@condition invisible}, it appears before attacking."
+					]
+				},
+				{
+					"name": "Mage Slap",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}8 ({@damage 2d4 + 3}) force damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Befuddle",
+					"entries": [
+						"When the befuddler sees a creature within 60 feet of it cast a spell, it can use its reaction to befuddle it. The befuddler must make a Charisma check contested with the caster's spellcasting ability check.",
+						"On a success, the spell is transformed and becomes another spell of the same level (randomly selected). If applicable, the befuddler chooses the new target(s) of the spell or its area of effect. The spellcasting ability of the original caster is used in determining its DC."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/FPKIYTn.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Hollow walker",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 8,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Frightening Aura",
+					"entries": [
+						"A creature that begins its turn within 30 feet of the hollow walker and can see it must succeed on a {@dc 14} Wisdom saving throw, or become {@condition frightened} of it.",
+						"When a {@condition frightened} creature makes this save again, it takes 9 ({@damage 2d8}) psychic damage on a failure, or ends the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Potent Fear",
+					"entries": [
+						"Hollow walkers have advantage on attacks against creatures that are {@condition frightened} of them."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hollow walker makes two bite attacks"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Paralyzing Gaze",
+					"entries": [
+						"The hollow walker targets a creature it can see within 60 feet of it with its paralyzing gaze. If the creature can see the hollow walker, it must succeed on a {@dc 14} Wisdom saving throw or take 13 ({@damage 3d8}) psychic damage and be {@condition paralyzed} for 1 minute. On a successful save, the creature takes half as much damage and is not {@condition paralyzed}. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"A creature {@condition frightened} by the hollow walker automatically fails this saving throw."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/f7u3KLU.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Nightmare Fairy",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d4 + 10",
+				"average": 35
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 5,
+			"dex": 18,
+			"con": 12,
+			"int": 13,
+			"wis": 12,
+			"cha": 16,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Fevidur"
+			],
+			"cr": "4",
+			"senseTags": [
+				"SD"
+			]
+		},
+		{
+			"name": "Kalwar Rager",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the rager can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"The rager can use its bonus action to move up to its speed towards a hostile creature. If it moves 30 feet or more towards a creature, and then hits it with a greataxe attack on the same turn, it deals an extra 13 ({@damage 2d12}) slashing damage to it."
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the kalwar rager reduces a creature to 0 hit points with a melee attack on its turn, the kalwar rager can take a bonus action to move up to half its speed and make another attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kalwar rager makes two greataxe attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliation",
+					"entries": [
+						"When the kalwar rager is hit by a melee weapon attack, it can make a melee weapon attack against the target that hit it."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/hWVweqO.png",
+			"traitTags": [
+				"Charge",
+				"Rampage",
+				"Reckless"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Kalwar Ravager",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"damaged chain shirt"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 8,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Enraged",
+					"entries": [
+						"As the kalwar infected takes more damage, its rage deepens, even to the point of rejecting death. When the kalwar infected has less than half of its maximum hitpoints, it has advantage on all melee weapon attacks it makes. However, all attacks against it have advantage as well.",
+						"If damage reduces the kalwar infected to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the kalwar infected drops to 1 hit point instead, and enters an enraged state. While in this state, a melee weapon deals one extra die of its damage when the kalwar infected hits with it."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"The kalwar infected can use its bonus action to move up to its speed towards a hostile creature. If the kalwar infected then hits the creature with a melee attack, it deals an extra 9 ({@damage 2d8}) slashing damage to it."
+					]
+				},
+				{
+					"name": "Infecting Rampage",
+					"entries": [
+						"When the kalwar infected reduces a creature to 0 hit points with a melee attack on its turn, the kalwar infected can let another creature of its choice that it can see within 30 feet of it attack.",
+						"The creature can use its reaction to move up to half of its movement speed and make one melee weapon attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longsword (Enraged)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/mcP8A6L.png",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Kalwar Infected",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 6,
+			"wis": 7,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Enraged Fortitude",
+					"entries": [
+						"If damage reduces the kalwar infected to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, the kalwar infected drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Enraged Hoard",
+					"entries": [
+						"The kalwar infected has a +1 bonus to its saving throws for each other infected within 30 feet of it."
+					]
+				},
+				{
+					"name": "Enraged Pummeling",
+					"entries": [
+						"When the Kalwar infected hits with an attack, it can make an additional attack as part of the same action. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kalwar infected makes at least two pummel attacks in its turn."
+					]
+				},
+				{
+					"name": "Pummel",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. On a hit, the target takes bludgeoning damage equal to the number of attacks the kalwar infected has made this turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/FwVkwPz.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Archival Storm",
+			"source": "Fevidur",
+			"size": "G",
+			"type": {
+				"type": "construct",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "15d12 + 45",
+				"average": 142
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 22,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 6,
+			"save": {
+				"wis": "+5",
+				"int": "+6"
+			},
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 12,
+			"immune": [
+				"bludgeoning",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"Understands all but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The archival storm is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The archival storm is a gargantuan swarm of tiny magical pages. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny construct. The swarm can't regain hit points or gain temporary hit points.. The swarm also has resistance to damage from any effect that targets distinct creatures or objects instead of an area of effect."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The archival storm has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Papercuts",
+					"entries": [
+						"Any creature of the storm's choice takes 3 slashing damage for every 5 feet it moves through the swarm's space. Any damage dealt by the swarm is magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The storm uses Erase Knowledge, and then uses its Cutting Storm against any creature that has threatened it."
+					]
+				},
+				{
+					"name": "Erase Knowledge",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 0 ft., every creature within the swarm's space. {@h} Each creature loses any memories it had regarding the content of the books which are now part of the Archive, as per the modify memory spell."
+					]
+				},
+				{
+					"name": "Cutting Storm",
+					"entries": [
+						"Each creature of the swarm's choice within the space of the swarm must succeed on a {@dc 17} Dexterity saving throw or take 21 ({@damage 6d6}) slashing damage, taking half as much damage on a success. If the swarm has half of its hitpoints or less, a creature takes half as much damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"XX"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Darahl",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "35d8 + 105",
+				"average": 262
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"cha": "+10",
+				"wis": "+8",
+				"con": "+9",
+				"dex": "+9"
+			},
+			"skill": {
+				"athletics": "+11",
+				"acrobatics": "+9",
+				"insight": "+14",
+				"intimidation": "+10",
+				"perception": "+14"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 60 ft."
+			],
+			"passive": 24,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Feylith"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Aura of Presence",
+					"entries": [
+						"Any creature of Darahl's choice that begins its turn within 30 feet of him must make a {@dc 18} Charisma saving throw. On a failure, the creature is so overwhelmed by Darahl's presence and can only see him. Until the start of its next turn, it is considered to be {@condition blinded} in regards to any creature within 30 feet of Darahl, other than Darahl."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Darahl has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Inspiring Victor",
+					"entries": [
+						"Darahl has a pool of inspiration dice that fills each time he is victorious in a clash of wills. These dice are {@dice d10}s and a die is added each time he forces one or more creatures to fail a saving throw or a contested ability check, he lands a critical hit, or he reduces a creature to 0 hit points. The pool can have a maximum of 5 inspiration dice, and resets a minute after the last inspiration die was added.",
+						"Darahl can use these inspiration dice and add them to a roll of his choice that he or an ally within 30 feet of him makes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Darahl makes three arm branch attacks or makes one arm javelin attack."
+					]
+				},
+				{
+					"name": "Arm Branch",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage, and Darahl can choose to grapple the target if it is a Large or smaller creature (escape {@dc 19})."
+					]
+				},
+				{
+					"name": "Arm Javelin",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/120 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, plus 18 ({@damage 4d8}) radiant damage, and the creature is surrounded by bright, colorful light for 1 minute or until the effect is dispelled.",
+						"For the duration, checks to track the creature are made with advantage. When Darahl or one of his allies hits the creature, they can trigger the effect to dispel, dealing 18 ({@damage 4d8}) radiant damage to the creature."
+					]
+				},
+				{
+					"name": "Victorious Transformation",
+					"entries": [
+						"Darahl expends 5 inspiration dice to fill himself with transcended confidence. Any creatures within 30 feet of him immediately take 21 ({@damage 6d6}) radiant damage and are {@condition charmed} by him until the end of their next turn.",
+						"This transformation lasts for 1 minute, or until Darahl falls {@condition unconscious}. For the duration, Darahl can make an additional Arm Branch attack with his multiattack, has advantage on all saving throws, and gains 2 inspiration dice at the start of each of his turns. Additionally, creatures have disadvantage on saving throws made to resist his aura of presence, and on a failure, a creature also becomes {@condition charmed} of Darahl while {@condition blinded}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Overwhelming Will",
+					"entries": [
+						"When a creature within 30 feet of Darahl makes a saving throw, Darahl can project his will through his gaze towards the creature, imposing himself on it. The creature makes the saving throw with disadvantage, and if they fail the saving throw, they become {@condition charmed} by Darahl until the end of their next turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Arm Branch",
+					"entries": [
+						"Darahl makes one Arm Branch attack. On a hit, the creature must succeed on a {@dc 19} Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"name": "Legendary Renewal",
+					"entries": [
+						"If Darahl has any inspiration dice, he can spend one or more inspiration dice to regain his reaction. For each inspiration die he spends, Darahl regains {@dice 1d10 + 3} hit points. Any creatures that see this willful change while within 30 feet of Darahl must succeed on a {@dc 18} Charisma saving throw or become {@condition charmed} by him until the end of their next turn."
+					]
+				},
+				{
+					"name": "Teleport (Costs 2 Actions)",
+					"entries": [
+						"Darahl teleports to a point he can see within 60 feet. Any creatures of his choice within 10 feet of his current or target location must succeed on a {@dc 18} Constitution saving throw or take 22 ({@damage 5d8}) force damage, taking half as much damage on a success."
+					]
+				},
+				{
+					"name": "Skewering Branch (Costs 3 Actions)",
+					"entries": [
+						"Darahl thrusts his arm forward, piercing any creature standing in his way. Any creature in a 60-foot line from Darahl must succeed on a {@dc 19} Dexterity saving throw or take 42 ({@damage 12d6}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/lA94eTN.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			]
+		},
+		{
+			"name": "Archmage Eruthil",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Weavemane Cloak"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"int": "+11",
+				"wis": "+10",
+				"con": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+17",
+				"nature": "+17",
+				"investigation": "+11",
+				"insight": "+10",
+				"history": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"force"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Archmage Eruthil is a 20th level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). He can cast shield and enhance ability at will, and has the following spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell armor of Agathys}",
+								"{@spell faerie fire}",
+								"{@spell magic missile}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell ray of enfeeblement}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell ionizing wind|ATLAS}",
+								"{@spell sickening radiance|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell energy barrage|YAG}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage}",
+								"{@spell prismatic spray}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell lightning tether|TheElementalSpellbookSpellsofIceFireandLightning}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell foresight}",
+								"{@spell prismatic wall}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Weavemane Cloak",
+					"entries": [
+						"Archmage Eruthil possesses a Weavemane Cloak. While wearing it, he gains the following benefits:",
+						"- If he isn't wearing armor, his base Armor Class is 15 + his Dexterity modifier.",
+						"- He has advantage on saving throws against spells and other magical effects.",
+						"- He has resistance to force damage and damage from spells.",
+						"- His spell save DC and spell attack bonus each increase by 2.",
+						"- He can use his Weavemane Absorption reaction."
+					]
+				},
+				{
+					"name": "Contigency",
+					"entries": [
+						"Archmage Eruthil always has contingency cast on himself. When he enters combat, armor of Agathys is cast on him at 5th level. This casting of the spell deals force damage instead of cold."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Weave Bolt",
+					"entries": [
+						"{@atk rs} {@hit 13} to hit, range 60/120 ft., one target. {@h}22 ({@damage 4d10}) force damage. If the target is concentrating on a spell, it has disadvantage on the concentration check it makes as a result of taking this damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Weavemane Absorption",
+					"entries": [
+						"When Archmage Eruthil succeeds on a saving throw against a spell, he can use his reaction to gain 20 temporary hitpoints and cause the cloak to expand around him. Any creatures of his choice within 20 feet of him must make a {@dc 17} Constitution saving throw. On a failure, they take {@damage 1d10} force damage for each level of the spell, or half as much damage on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weave Bolt",
+					"entries": [
+						"Archmage Eruthil makes a weave bolt attack."
+					]
+				},
+				{
+					"name": "Weavemane Shroud (Costs 2 Actions)",
+					"entries": [
+						"Archmage Eruthil causes his weavemane cloak to wrap around him. Until the start of his next turn, Eruthil completely negates the damage from the next attack that hits him, and instead transfers the damage back to the creature that dealt it."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"Archmage Eruthil casts a spell of 5th level or lower, or activates the properties of an active spell, if an action or bonus action is normally required."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/aW3MqXH.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Cultist of Vengeance",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"deception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Acid Body",
+					"entries": [
+						"The cultist has advantage on checks and saving throws made to avoid or escape a grapple.",
+						"Additionally, when the cultist is reduced to 0 hitpoints, every creature within 15 feet of it takes 13 ({@damage 4d6}) acid damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Acidic Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d6 + 2}) acid damage, and the target must make a {@dc 13} Constitution saving throw. On a failure, the target is {@condition poisoned} for 1 minute, and while {@condition poisoned}, its movement speed is halved and it takes 10 ({@damage 3d6}) acid damage at the start of each of its turns.",
+						"A target can repeat the saving throw at the end of its of its turns. On a failure, it takes another 10 ({@damage 3d6}) acid damage. On a success, the effect ends."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/GCsJSWV.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Devolved Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 3,
+			"wis": 14,
+			"cha": 1,
+			"save": {
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+9"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The devolved cerebrovore can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Poisonous Contact",
+					"entries": [
+						"A creature that touches the cerebrovore or starts its turn {@condition grappled} by it must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Terrain Mutability",
+					"entries": [
+						"The area in a 15-foot radius around the devolved cerebrovore is considered to be difficult terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devolved cerebrovore makes two pseudopod attacks and uses its Reel once."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target must succeed on a {@dc 15} Strength saving throw or be {@condition grappled} (escape {@dc 15})."
+					]
+				},
+				{
+					"name": "Reel",
+					"entries": [
+						"Any creatures {@condition grappled} by the cerebrovore must succeed on a {@dc 15} Strength saving throw, or be pulled up to 15 feet towards it."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/RrDEjQU.png",
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Devolved Cerebrovore Swamp",
+			"source": "Fevidur",
+			"size": "G",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "15d20 + 75",
+				"average": 232
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 20,
+			"dex": 6,
+			"con": 20,
+			"int": 3,
+			"wis": 12,
+			"cha": 2,
+			"save": {
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"grappled",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The devolved cerebrovore swamp can move through a space as narrow as 1 inch wide without squeezing and can occupy the same space as other creatures."
+					]
+				},
+				{
+					"name": "Sticky",
+					"entries": [
+						"A creature that starts its turn in the cerebrovore swamp's area must succeed on a {@dc 17} Strength saving throw or be {@condition grappled} (escape {@dc 17}).",
+						"A {@condition grappled} creature that fails this saving throw is dragged down into the bog and becomes engulfed by the cerebrovore swamp. The engulfed creature can't breathe, is {@condition restrained}, and takes 21 (6d6) acid damage at the start of each of the swamp's turns. When the swamp moves, the engulfed creature moves with it.",
+						"An engulfed creature can try to escape by taking an action to make a {@dc 15} Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the swamp. Alternatively, a creature within 5 feet of the swamp can take an action to pull a creature out of the swamp. Doing so requires a successful {@dc 15} Strength check, and the creature making the attempt takes 10 (3d6) acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Uldive Fungus",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d4 + 33",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 3,
+			"dex": 22,
+			"con": 16,
+			"int": 4,
+			"wis": 12,
+			"cha": 3,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"stealth": "+10"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the uldive fungus remains motionless, it is indistinguishable from a naturally occurring fungus on cave walls."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fungal Spray",
+					"entries": [
+						"The uldive fungus lets out a cloud of spores in a 10-foot radius around itself. Any creatures in the area must succeed on a {@dc 13} Constitution saving throw, or take 10 (3d6) poison damage and become {@condition poisoned} for 1 minute. On a successful save, a creature takes half as much damage. When the uldive fungus uses this ability, it can choose to expend a number of its hitpoints. For every 10 hitpoints it expends, the DC of the save is increased by 1, the poison damage is increased by 1d6, and the radius of the spread increases by 5 feet.",
+						"A {@condition poisoned} creature repeats the saving throw at the end of each of its turns. On a failed save, its current hitpoints are reduced by 10, and it spews out an uldive fungus with 10 hitpoints. When the creature succeeds on three of these saves, it is longer {@condition poisoned}."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/PFOjFN0.png",
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Uldive Fungus Healer",
+			"source": "Fevidur",
+			"size": "T",
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "8d4 + 24",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 3,
+			"dex": 18,
+			"con": 16,
+			"int": 3,
+			"wis": 16,
+			"cha": 2,
+			"save": {
+				"con": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the uldive fungus healer remains motionless, it is indistinguishable from natural cave fungi."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fungal Spray",
+					"entries": [
+						"The uldive fungus lets out a cloud of spores in a 15-foot radius around itself. Any non-fungal creatures in the area must succeed on a {@dc 13} Constitution saving throw, or take 10 (3d6) poison damage and suffer disadvantage on their next saving throw. Any fungi within the area of effect instead regain hitpoints equal to twice the damage rolled.",
+						"The DC of this ability increases by 1 for each other fungal creature within the area of effect."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/xEYEAET.png",
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE"
+			]
+		},
+		{
+			"name": "Aquatic Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 18,
+			"cha": 11,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts} (range 1000 feet)",
+						"psychic anchor"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aquatic cerebrovore has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The aquatic cerebrovore has advantage on attack rolls against any creature it has surprised."
+					]
+				},
+				{
+					"name": "Carrier",
+					"entries": [
+						"The cerebrovore can move its full speed while grappling a creature with its tentacles. Additionally, when a creature starts its turn {@condition grappled} by a cerebrovore it takes 4 psychic damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cerebrovore makes two tentacle attacks."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 30 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage, and the target is {@condition grappled} and {@condition restrained}. The cerebrovore can grapple up to two creatures at a time in this way."
+					]
+				},
+				{
+					"name": "Mind Blast {@recharge 5}",
+					"entries": [
+						"The cerebrovore magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/VGM/Kraken%20Priest.png",
+			"traitTags": [
+				"Ambusher",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Abolethic Cerebrovore",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"wis": "+7",
+				"con": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"stunned"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cerebrovore's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"psychic anchor"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The cerebrovore is a 10th-level spellcaster. Its spellcasting ability is Wisdom (save {@dc 15}, +7 to hit with spell attacks). The cerebrovore has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell crushing curse|DMS}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell mind sliver|TCE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell dissonant whispers}",
+								"Figgly's exploding squid",
+								"rime rhyme"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell mind spike|XGE}",
+								"{@spell Tasha's mind whip|TCE}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell clairvoyance}",
+								"{@spell sending}",
+								"{@spell sleet storm}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"crushing depths",
+								"{@spell locate creature}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"meandering torrent",
+								"{@spell synaptic static|XGE}"
+							],
+							"slots": 0
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aquatic cerebrovore linked has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Abolethic Mind",
+					"entries": [
+						"The cerebrovore has advantage on Intelligence, Wisdom, Charisma saving throws, and checks made to maintain concentration. When a creature forces the cerebrovore to make one of these saving throws, and the cerebrovore succeeds, it can use its Abolethic Mindtap reaction against the creature.",
+						"Any creature that reads or attempts to influence the mind of the cerebrovore takes 13 (3d8) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Abolethic Mindtap",
+					"entries": [
+						"When a creature that the cerebrovore can see within 60 feet of it fails an Intelligence, Wisdom or Charisma saving throw, the cerebrovore can use its reaction to deal 13 (3d8) psychic damage to the creature."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/GoS/Skum.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		},
+		{
+			"name": "Black Guard",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"splint armor, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 21",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"con": "+5",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+6",
+				"perception": "+4",
+				"religion": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"conditionImmune": [
+				"charmed"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Black Devotion",
+					"entries": [
+						"The black guard has advantage on saving throws against spells and magical effects that have a divine origin. These are spells cast by clerics, paladins, celestials, and any other source the DM deems suitable."
+					]
+				},
+				{
+					"name": "Desecrating Strike (Recharges on a Long Rest)",
+					"entries": [
+						"When the black guard hits a creature with a weapon attack, it can force it to make a {@dc 15} Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"A creature that fails the initial saving throw and is somehow connected to the gods also takes an additional 11 (2d10) psychic damage. When such a creature succeeds on the initial saving throw, it takes half as much damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black guard makes two longsword attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/9YcbY1p.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Weavemane Guardian",
+			"source": "Fevidur",
+			"size": "H",
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "20d12 + 140",
+				"average": 270
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 26,
+			"dex": 14,
+			"con": 24,
+			"int": 18,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+8",
+				"cha": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"force",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				{
+					"special": "all conditions, except for incapacitated"
+				}
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The weavemane guardian can enter a hostile creature's space and stop there, and it can move through objects as if they were difficult terrain. Its hitpoints are reduced by 5 (1d10) if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Anchored",
+					"entries": [
+						"The weavemane guardian cannot be teleported or banished against its will."
+					]
+				},
+				{
+					"name": "Animated Weave",
+					"entries": [
+						"The weavemane guardian is a being made purely from the weave. When it is forced to make a saving throw against a spell, or it takes damage from a spell, it causes raw destabilized magic to lash out, and each creature within 10 feet of it takes 5 (1d10) force damage."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The weavemane guardian has advantage on saving throws against spells and other magical effects. It also has resistance to all damage from spells."
+					]
+				},
+				{
+					"name": "Destabilizing Field",
+					"entries": [
+						"A creature that begins its turn in the area of the guardian must succeed on a {@dc 20} Constitution saving throw, or suffer a random effect. Roll a d8.",
+						"1. The creature takes 2d8 lightning damage and can't take any reactions until the start of its next turn.",
+						"2. The creature takes 2d8 thunder damage and becomes sheathed in booming energy until the start of its next turn. If the target willingly moves 5 feet or more before then, the target takes 2d8 thunder damage",
+						"3. The creature takes 2d8 necrotic damage, and it can't regain hit points until the start of its next turn.",
+						"4. The creature takes 2d8 cold damage and has disadvantage on the next attack roll it makes.",
+						"5. The creature's speed becomes 0 until the start of its next turn.",
+						"6. The creature gains a Moderate Destabilizing Wound (2d6 force damage at the start of each of its turns)",
+						"7. The creature takes 2d8 force damage and is sheathed in destabilizing energy. Any creature that touches the target takes 1d8 force damage for the next minute, or until dispelled.",
+						"8. If the creature is able to cast spells, it is forced to cast a random spell it knows, consuming a spell slot as usual. The spell must have a casting time of 1 action or bonus action, but the creature does not consume this action.",
+						"9. A temporal stream runs through the creature. It can expend a number of hit and heal. The number of hit dice it expends must be equal to or lower than half its level.",
+						"10. A random effect of the DM's choice."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The guardian makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}24 ({@damage 3d10 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Weave Disturbance {@recharge 5}",
+					"entries": [
+						"The weavemane guardian lets out a surge of arcane energy through its body. Any creatures within 20 feet of the guardian must succeed on a {@dc 20} Constitution saving throw or take 36 ({@damage 8d8}) force damage, or half as much on a success. On a failed saving throw, a target also becomes unable of casting spells until the end of its next turn. A creature inside the guardian makes the saving throw with disadvantage.",
+						"Additionally, any active magical effects of the guardian's choice within the affected area come under the effects of the dispel magic spell."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Magic",
+					"entries": [
+						"If the guardian sees a creature within 60 feet of it cast a spell, it can attempt to redirect the spell by succeeding on a Constitution check against the caster's spell save DC. On a success, the guardian can redirect the spell by changing the target of the spell. whether that is a creature or a point of space.",
+						"When it does so, the guardian can also choose to absorb the spell into itself, cancelling its effect and feeding on it. The guardian gains 5 temporary hitpoints for each level of the spell when it does so."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Arcane Censure (1 Action)",
+					"entries": [
+						"The guardian targets a creature within 120 feet of it, manipulating its connection to the weave. The creature must make a {@dc 20} Charisma saving throw. On a failure, the DM determines at random a spell that the creature can cast. The guardian chooses one of the following effects:",
+						"The creature cannot cast this spell until it completes a short or long rest.",
+						"Or, the creature must cast this spell before being able to cast any other spell."
+					]
+				},
+				{
+					"name": "Slam (Costs 2 Actions)",
+					"entries": [
+						"The weavemane guardian makes a slam attack. On a hit, the guardian also uses condensed magical energy to create a shock wave. The target and any other creature of the guardian's choice within 10 feet of the target must succeed on a {@dc 20} Strength saving throw, or be pushed up to 20 feet away from the point of the explosion."
+					]
+				},
+				{
+					"name": "Dispel (Costs 2 Actions)",
+					"entries": [
+						"The weavemane guardian casts dispel magic without requiring any components, using Constitution as its spellcasting ability. If the guardian successfully dispels a spell that was affecting a creature, it can cause it to take 1d6 force damage for each level of the spell. It can only cause this damage on one target."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/e6Q7Dai.png",
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"L",
+				"N",
+				"O",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Black Guard Captain",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"plate armor, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+6",
+				"intimidation": "+9",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Black Captain is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It has the following paladin spells prepared:",
+						"1st level (4 slots): bane, command, hellish rebuke",
+						"2nd level (3 slots): chill smite, hold person",
+						"3rd level (2 slots): bestow curse, fear"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The black captain has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Desecrated Smite",
+					"entries": [
+						"When the black captain hits a creature with a melee weapon attack, it can expend a spell slot to deal {@dice 1d8} additional necrotic damage to it for each level of the spell slot."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black captain makes two longsword attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Captain makes a longsword attack. On a hit, the target must succeed on a {@dc 14} Wisdom saving throw or become {@condition frightened} of the captain until the end of its next turn."
+					]
+				},
+				{
+					"name": "Direct Attack",
+					"entries": [
+						"The Black Guard Captain commands an ally within 30 feet of it to move up to half of its speed and make a melee attack. The Captain can't command the same ally in this way again in the same round."
+					]
+				},
+				{
+					"name": "Desecrating Wave (Costs 2 Actions)",
+					"entries": [
+						"The captain lets out a wave of debilitating energy in a direction of its choice, either a 60-foot line, or in a 15-foot radius around it. Any creatures of its choice in the area must succeed on a {@dc 14} Constitution saving throw or take {@damage 4d8} necrotic damage and fall {@condition prone}. A creature takes half as much damage and doesn't fall {@condition prone} on a success."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs X Actions)",
+					"entries": [
+						"The Black Captain casts a spell of 1st to 3rd level. The captain expends a number of legendary actions equal to the spell's level."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/xZVzNFT.png",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			]
+		},
+		{
+			"name": "Gorthran the Valiant",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"chain mail, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 42",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"dex": "+3"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+5",
+				"persuasion": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Tactical Combatant",
+					"entries": [
+						"When a player character is flanking an enemy with Gorthran, they may use their bonus action to allow Gorthran to make a melee weapon attack against the flanked target."
+					]
+				},
+				{
+					"name": "Indomitable (2/day)",
+					"entries": [
+						"When Gorthran fails a saving throw, he may reroll it twice per day.",
+						"Additionally, when Gorthran succeeds on a saving throw, any allies within 10 feet of him gain advantage on the next saving throw they make for 1 minute."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gorthran makes two weapon attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield Guardian",
+					"entries": [
+						"When Gorthran or an ally within 5 feet of him is targeted by an attack, Gorthran can use his reaction to grant a +2 bonus to the target's AC."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/kdzU9MH.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Terrorgheist",
+			"source": "Fevidur",
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d12 + 39",
+				"average": 123
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 17,
+			"int": 5,
+			"wis": 11,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the terrorgheist moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that creature must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is knocked {@condition prone}, the terrorgheist can make one claw attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The terrorgheist can't use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The terrorgheist has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Necrotic Explosion",
+					"entries": [
+						"Upon death, the terrorgheist forcefully explodes in a 20-foot-radius sphere centered on the terrorgheist. Each creature in the area must make a Dexterity saving throw. A creature takes 12 ({@damage 3d6}) necrotic damage on a failed saving throw, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the terrorgheist to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or grom a citical hit. On a success, the terrorgheist drops to 1 hit point instead. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"While in flight, the terrorgheist makes two attacks; one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Shriek Of The Damned {@recharge}",
+					"entries": [
+						"The terrorgheist lets loose a horrifying shriek, provided that it isn't in sunlight. This shriek has no effect on constructs and the undead. All other creatures within 30 feet of it that can hear it must make a {@dc 13} Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ({@damage 3d6}) psychic damage. "
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/I5uch21.png",
+			"traitTags": [
+				"Charge",
+				"Keen Senses",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Voidwraith",
+			"source": "Fevidur",
+			"size": "L",
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 75
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 90,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"con": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "bludgeoning, piercing, and slashing from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				{
+					"special": "all conditions"
+				}
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The voidwraith can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Airless Aura",
+					"entries": [
+						"A voidwraith's body is surrounded by an aura of near vacuum at all times. Breathing creatures within 15 feet of the voidwraith have no air to breathe and must hold their breath. Whenever such a creature takes damage, it must make a {@dc 13} Constitution saving throw. On a failed save, the creature begins suffocating. If the creature is already suffocating, it instead loses one of the rounds that it has to reach air before dropping to 0 hit points."
+					]
+				},
+				{
+					"name": "Steal Breath",
+					"entries": [
+						"When a creature within 15 feet of the voidwraith is reduced to 0 hit points, the voidwraith gains 5 temporary hit points, and the creature runs out of breath if it hadn't already."
+					]
+				},
+				{
+					"name": "Vacuum",
+					"entries": [
+						"Creatures within 15 feet of the voidwraith must spend 2 feet of movement for every 1 foot they move away from the voidwraith."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Void Touch",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}23 ({@damage 4d8 + 5}) necrotic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/92viOmF.png",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Alluvium Elemental",
+			"source": "Fevidur",
+			"size": "H",
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "15d12 + 75",
+				"average": 172
+			},
+			"speed": {
+				"walk": 25,
+				"burrow": 30,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 7,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"wis": "+6",
+				"con": "+9"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The alluvium elemental can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Alluvium Corruption",
+					"entries": [
+						"The alluvium elemental and all servants of alluvium strengthen each other when in close proximity. The alluvium elemental has advantage on all saving throws when within 10 feet of another creature with this feature.",
+						"Additionally, each time the alluvium elemental touches a creature, hits it with an attack or affects it with an ability or spell, the target gains 1 point of alluvium corruption unless otherwise specified."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The alluvium elemental regains 10 hit points at the start of its turn if it has at least 1 hit point and it is in contact with a source of alluvium."
+					]
+				},
+				{
+					"name": "Corrupt Strike (1/Turn)",
+					"entries": [
+						"When the alluvium elemental hits a target with an attack, it can deal an extra amount of necrotic damage equal to the points of alluvium corruption a target has."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elemental uses its Engulf. It then makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}23 ({@damage 4d8 + 5}) necrotic damage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"The elemental moves up to its speed. While doing so, it can enter Huge or smaller creatures' spaces. Whenever the elemental enters a creature's space, the creature must make a {@dc 17} Dexterity saving throw.",
+						"On a successful save, the creature can choose to be pushed 5 feet back or to the side of the ooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.",
+						"On a failed save, the elemental enters the creature's space and the creature is engulfed. The engulfed creature can't breathe, is {@condition restrained}, and gains 5 ({@dice 2d4}) points of alluvium corruption. When the elemental moves, the engulfed creature moves with it.",
+						"An engulfed creature gains {@dice 1d4} points of alluvium corruption at the start of each of its turns. It can try to escape by taking an action to make a {@dc 17} Strength (Athletics) check. On a success, the creature escapes and enters a space of its choice within 5 feet of the elemental."
+					]
+				},
+				{
+					"name": "Alluvium Spread {@recharge 5}",
+					"entries": [
+						"The alluvium elemental spews black goo in a 30-foot radius around it. Any creatures in the area must succeed on a {@dc 17} Dexterity saving throw, or take 36 ({@damage 8d8}) necrotic damage and gain 5 ({@dice 2d4}) points of alluvium corruption, taking half as much damage and alluvium points on a success.",
+						"Any creatures in the area that have the alluvium corruption trait instead regain 10 ({@dice 4d4}) hitpoints."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/eWS5JrA.png",
+			"traitTags": [
+				"Amorphous",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Alluvium Minze",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 6,
+			"wis": 14,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"acid"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"restrained"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Alluvium Corruption",
+					"entries": [
+						"The alluvium minze and all servants of alluvium strengthen each other when in close proximity. The alluvium minze has advantage on all saving throws when within 10 feet of another creature with this feature.",
+						"Additionally, each time the alluvium minze touches a creature, hits it with an attack or affects it with an ability or spell, the target gains 1 point of alluvium corruption unless otherwise specified."
+					]
+				},
+				{
+					"name": "Corrupt Strike (1/Turn)",
+					"entries": [
+						"When the alluvium minze hits a target with an attack, it can deal an extra amount of necrotic damage equal to the points of alluvium corruption a target has."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The alluvium minze regains 10 hit points at the start of its turn if it has at least 1 hit point and it is in contact with a source of alluvium."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The alluvium minze makes two blob attacks. When its Foul Transit is available, it can use Foul Transit in place of one blob attack."
+					]
+				},
+				{
+					"name": "Alluvium Blob",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/120 ft., one target. {@h}14 ({@damage 3d6 + 4}) necrotic damage, and the blob explodes. The target gains two additional points of alluvium corruption, and adjacent creatures also gain a point of alluvium corruption."
+					]
+				},
+				{
+					"name": "Foul Transit {@recharge 4}",
+					"entries": [
+						"The minze teleports to an unoccupied space it can see within 50 feet, leaving behind a wretched puddle in the space it previously occupied. A creature within 5 feet of the space the minze left must succeed on a {@dc 16} Constitution saving throw or take 10 ({@damage 3d6}) necrotic damage and become {@condition poisoned} until the end of its next turn. The first time a creature enters the puddle's space or if a creature starts its turn in the puddle's space it takes 10 ({@damage 3d6}) necrotic damage and is {@condition poisoned}. The puddle lasts for 1 minute."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Puddle Splash",
+					"entries": [
+						"When a creature the alluvium minze can see targets it with a melee attack while within 5 feet of the minze, the minze can teleport to a puddle created by its Foul Transit, if that puddle's space is unoccupied, negating the damage from the attack. If it does, the attacker must succeed on a {@dc 16} Constitution saving throw or take 10 ({@damage 3d6}) necrotic damage and become {@condition poisoned} until the end of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/k3Q6lH9.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Alluvium Dragon",
+			"source": "Fevidur",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 85",
+				"average": 178
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"canHover": false,
+				"swim": 40
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 8,
+			"wis": 14,
+			"cha": 7,
+			"save": {
+				"dex": "+6",
+				"con": "+9",
+				"wis": "+6",
+				"cha": "+2"
+			},
+			"skill": {
+				"athletics": "+9",
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"acid",
+				"necrotic",
+				"piercing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The alluvium dragon regains 10 hit points at the start of its turn if it has at least 1 hit point and it is in contact with a source of alluvium."
+					]
+				},
+				{
+					"name": "Alluvium Corruption",
+					"entries": [
+						"The alluvium dragon and all servants of alluvium strengthen each other when in close proximity. The alluvium servant has advantage on all saving throws when within 10 feet of another creature with this feature.",
+						"Additionally, each time the alluvium servant touches a creature, hits it with an attack or affects it with an ability or spell, the target gains 1 point of alluvium corruption unless otherwise specified."
+					]
+				},
+				{
+					"name": "Corrupt Strike (1/Turn)",
+					"entries": [
+						"When the dragon servant hits a target with an attack, it can deal an extra amount of necrotic damage equal to the points of alluvium corruption a target has."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) necrotic damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) necrotic damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}14 ({@damage 2d8 + 5}) necrotic damage."
+					]
+				},
+				{
+					"name": "Alluvium Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales alluvium in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 17} Dexterity saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. Affected creatures also gain half as many points of alluvium corruption."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/qh0EHYa.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Alluvium Servant",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 36",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 3,
+			"save": {
+				"wis": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft. (in alluvium)"
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The alluvium servant regains 10 hit points at the start of its turn if it has at least 1 hit point and it is in contact with a source of alluvium."
+					]
+				},
+				{
+					"name": "Corrupt Strike (1/Turn)",
+					"entries": [
+						"When the servant hits a target with an attack, it can deal an extra amount of necrotic damage equal to the points of alluvium corruption a target has."
+					]
+				},
+				{
+					"name": "Alluvium Corruption",
+					"entries": [
+						"The alluvium servant and all servants of alluvium strengthen each other when in close proximity. The alluvium servant has advantage on all saving throws when within 10 feet of another creature with this feature.",
+						"Additionally, each time the alluvium servant touches a creature, hits it with an attack or affects it with an ability or spell, the target gains 1 point of alluvium corruption unless otherwise specified."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The alluvium servant makes two touch attacks. When its Alluvium Spread is available, it can use its Alluvium Spread in place of one touch attack"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) necrotic damage."
+					]
+				},
+				{
+					"name": "Alluvium Spread {@recharge 5}",
+					"entries": [
+						"The alluvium servant unfurls, letting the alluvium comprising it expand from its body and spread outwards. Any creatures in a 15-foot radius from the alluvium servant must succeed on a {@dc 15} Constitution saving throw or gain 3 points of alluvium corruption and become {@condition poisoned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/OImSaXi.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Alluvium Priest",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 26",
+				"average": 84
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 8,
+			"wis": 20,
+			"cha": 10,
+			"save": {
+				"con": "+6",
+				"wis": "+9",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft. (in alluvium)"
+			],
+			"passive": 19,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The alluvium priest is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, +9 to hit with spell attacks). It has the following cleric spells prepared:",
+						"1st level (4 slots): inflict wounds",
+						"2nd level (3 slots): ray of enfeeblement",
+						"3rd level (3 slots): bestow curse, spirit guardians",
+						"4th level (3 slots): blight, sickening radiance",
+						"5th level (2 slots): cloudkill"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Alluvium Corruption",
+					"entries": [
+						"The alluvium priest and all servants of alluvium strengthen each other when in close proximity. The alluvium priest has advantage on all saving throws when within 10 feet of another creature with this feature.",
+						"Additionally, each time the alluvium priest touches a creature, hits it with an attack or affects it with an ability, the target gains 1 point of alluvium corruption unless otherwise specified. When the alluvium priest affects a creature with a spell, the creature gains a number of alluvium corruption points equal to the spell's level."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The alluvium servant regains 10 hit points at the start of its turn if it has at least 1 hit point and it is in contact with a source of alluvium."
+					]
+				},
+				{
+					"name": "Alluvium Mastery (1/Turn)",
+					"entries": [
+						"When the alluvium priest casts a spell that affects a creature corrupted by alluvium, it can choose to consume 10 points of the creature's alluvium corruption to cause one of the following effects:",
+						"The creature has disadvantage on the saving throw.",
+						"The creature loses its resistance to necrotic and poison damage for 1 round.",
+						"The creature takes 10 necrotic damage, and its hit point maximum is reduced by the same amount. If its hit point maximum is reduced to 0, the creature dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Alluvium Staff",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic damage and the target must succeed on a {@dc 15} Strength saving throw, or gain 2 points of alluvium corruption and become {@condition restrained}, as tentacles of alluvium strike up against it from the ground."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Alluvium Hex",
+					"entries": [
+						"When the alluvium priest sees a creature within 30 feet of it make an attack against it, the alluvium priest can impose disadvantage on the attack roll if the creature has at least 1 point of alluvium corruption. If the attack fails, the creature takes an amount of necrotic damage equal to the points of alluvium corruption it has."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/cigDlkP.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Jon Gunnar",
+			"source": "Fevidur",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0"
+		}
+	]
+}
