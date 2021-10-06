@@ -1,0 +1,2176 @@
+{
+	"siteVersion": "1.136.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Theophany",
+				"abbreviation": "Theo",
+				"full": "Theophany",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1633200450,
+		"dateLastModified": 1633200450
+	},
+	"monster": [
+		{
+			"name": "Kalwar Rager",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the rager can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"The rager can use its bonus action to move up to its speed towards a hostile creature. If it moves 30 feet or more towards a creature, and then hits it with a greataxe attack on the same turn, it deals an extra 13 ({@damage 2d12}) slashing damage to it."
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the kalwar rager reduces a creature to 0 hit points with a melee attack on its turn, the kalwar rager can take a bonus action to move up to half its speed and make another attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kalwar rager makes two greataxe attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliation",
+					"entries": [
+						"When the kalwar rager is hit by a melee weapon attack, it can make a melee weapon attack against the target that hit it."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/hWVweqO.png",
+			"traitTags": [
+				"Charge",
+				"Rampage",
+				"Reckless"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Kalwar Ravager",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"damaged chain shirt"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 8,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Enraged",
+					"entries": [
+						"As the kalwar infected takes more damage, its rage deepens, even to the point of rejecting death. When the kalwar infected has less than half of its maximum hitpoints, it has advantage on all melee weapon attacks it makes. However, all attacks against it have advantage as well.",
+						"If damage reduces the kalwar infected to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the kalwar infected drops to 1 hit point instead, and enters an enraged state. While in this state, a melee weapon deals one extra die of its damage when the kalwar infected hits with it."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"The kalwar infected can use its bonus action to move up to its speed towards a hostile creature. If the kalwar infected then hits the creature with a melee attack, it deals an extra 9 ({@damage 2d8}) slashing damage to it."
+					]
+				},
+				{
+					"name": "Infecting Rampage",
+					"entries": [
+						"When the kalwar infected reduces a creature to 0 hit points with a melee attack on its turn, the kalwar infected can let another creature of its choice that it can see within 30 feet of it attack.",
+						"The creature can use its reaction to move up to half of its movement speed and make one melee weapon attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longsword (Enraged)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/mcP8A6L.png",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Kalwar Infected",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 6,
+			"wis": 7,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Enraged Fortitude",
+					"entries": [
+						"If damage reduces the kalwar infected to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, the kalwar infected drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Enraged Hoard",
+					"entries": [
+						"The kalwar infected has a +1 bonus to its saving throws for each other infected within 30 feet of it."
+					]
+				},
+				{
+					"name": "Enraged Pummeling",
+					"entries": [
+						"When the Kalwar infected hits with an attack, it can make an additional attack as part of the same action. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kalwar infected makes at least two pummel attacks in its turn."
+					]
+				},
+				{
+					"name": "Pummel",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. On a hit, the target takes bludgeoning damage equal to the number of attacks the kalwar infected has made this turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/FwVkwPz.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Archival Storm",
+			"source": "Theophany",
+			"size": "G",
+			"type": {
+				"type": "construct",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "15d12 + 45",
+				"average": 142
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 22,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 6,
+			"save": {
+				"wis": "+5",
+				"int": "+6"
+			},
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 12,
+			"immune": [
+				"bludgeoning",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"Understands all but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The archival storm is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The archival storm is a gargantuan swarm of tiny magical pages. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny construct. The swarm can't regain hit points or gain temporary hit points.. The swarm also has resistance to damage from any effect that targets distinct creatures or objects instead of an area of effect."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The archival storm has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Papercuts",
+					"entries": [
+						"Any creature of the storm's choice takes 3 slashing damage for every 5 feet it moves through the swarm's space. Any damage dealt by the swarm is magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The storm uses Erase Knowledge, and then uses its Cutting Storm against any creature that has threatened it."
+					]
+				},
+				{
+					"name": "Erase Knowledge",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 0 ft., every creature within the swarm's space. {@h} Each creature loses any memories it had regarding the content of the books which are now part of the Archive, as per the modify memory spell."
+					]
+				},
+				{
+					"name": "Cutting Storm",
+					"entries": [
+						"Each creature of the swarm's choice within the space of the swarm must succeed on a {@dc 17} Dexterity saving throw or take 21 ({@damage 6d6}) slashing damage, taking half as much damage on a success. If the swarm has half of its hitpoints or less, a creature takes half as much damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"XX"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Vitriolic Follower",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"deception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Acid Body",
+					"entries": [
+						"The cultist has advantage on checks and saving throws made to avoid or escape a grapple.",
+						"Additionally, when the cultist is reduced to 0 hitpoints, every creature within 15 feet of it takes 13 ({@damage 4d6}) acid damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Acidic Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d6 + 2}) acid damage, and the target must make a {@dc 13} Constitution saving throw. On a failure, the target is {@condition poisoned} for 1 minute, and while {@condition poisoned}, its movement speed is halved and it takes 10 ({@damage 3d6}) acid damage at the start of each of its turns.",
+						"A target can repeat the saving throw at the end of its of its turns. On a failure, it takes another 10 ({@damage 3d6}) acid damage. On a success, the effect ends."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/GCsJSWV.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Black Guard",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"splint armor, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 21",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"con": "+5",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+6",
+				"perception": "+4",
+				"religion": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"conditionImmune": [
+				"charmed"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Black Devotion",
+					"entries": [
+						"The black guard has advantage on saving throws against spells and magical effects that have a divine origin. These are spells cast by clerics, paladins, celestials, and any other source the DM deems suitable."
+					]
+				},
+				{
+					"name": "Desecrating Strike (Recharges on a Long Rest)",
+					"entries": [
+						"When the black guard hits a creature with a weapon attack, it can force it to make a {@dc 15} Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"A creature that fails the initial saving throw and is somehow connected to the gods also takes an additional 11 (2d10) psychic damage. When such a creature succeeds on the initial saving throw, it takes half as much damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black guard makes two longsword attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/9YcbY1p.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Black Guard Captain",
+			"source": "Theophany",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"plate armor, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+6",
+				"intimidation": "+9",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Black Captain is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It has the following paladin spells prepared:",
+						"1st level (4 slots): bane, command, hellish rebuke",
+						"2nd level (3 slots): chill smite, hold person",
+						"3rd level (2 slots): bestow curse, fear"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The black captain has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Desecrated Smite",
+					"entries": [
+						"When the black captain hits a creature with a melee weapon attack, it can expend a spell slot to deal {@dice 1d8} additional necrotic damage to it for each level of the spell slot."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black captain makes two longsword attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Captain makes a longsword attack. On a hit, the target must succeed on a {@dc 14} Wisdom saving throw or become {@condition frightened} of the captain until the end of its next turn."
+					]
+				},
+				{
+					"name": "Direct Attack",
+					"entries": [
+						"The Black Guard Captain commands an ally within 30 feet of it to move up to half of its speed and make a melee attack. The Captain can't command the same ally in this way again in the same round."
+					]
+				},
+				{
+					"name": "Desecrating Wave (Costs 2 Actions)",
+					"entries": [
+						"The captain lets out a wave of debilitating energy in a direction of its choice, either a 60-foot line, or in a 15-foot radius around it. Any creatures of its choice in the area must succeed on a {@dc 14} Constitution saving throw or take {@damage 4d8} necrotic damage and fall {@condition prone}. A creature takes half as much damage and doesn't fall {@condition prone} on a success."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs X Actions)",
+					"entries": [
+						"The Black Captain casts a spell of 1st to 3rd level. The captain expends a number of legendary actions equal to the spell's level."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/xZVzNFT.png",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			]
+		},
+		{
+			"name": "Gorthran the Valiant",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"chain mail, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 42",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"dex": "+3"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+5",
+				"persuasion": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Tactical Combatant",
+					"entries": [
+						"When a creature is flanking an enemy with Gorthran, it may use its bonus action to allow Gorthran to make a melee weapon attack against the flanked target."
+					]
+				},
+				{
+					"name": "Indomitable (2/day)",
+					"entries": [
+						"When Gorthran fails a saving throw, he may reroll it twice per day.",
+						"Additionally, when Gorthran succeeds on a saving throw in this way, any allies within 10 feet of him gain advantage on the next saving throw they make for 1 minute."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gorthran makes two weapon attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield Guardian",
+					"entries": [
+						"When Gorthran or an ally within 5 feet of him is targeted by an attack, Gorthran can use his reaction to grant a +2 bonus to the target's AC."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/kdzU9MH.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Terrorgheist",
+			"source": "Theophany",
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d12 + 39",
+				"average": 123
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 17,
+			"int": 5,
+			"wis": 11,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the terrorgheist moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that creature must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is knocked {@condition prone}, the terrorgheist can make one claw attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The terrorgheist can't use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The terrorgheist has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Necrotic Explosion",
+					"entries": [
+						"Upon death, the terrorgheist forcefully explodes in a 20-foot-radius sphere centered on the terrorgheist. Each creature in the area must make a Dexterity saving throw. A creature takes 12 ({@damage 3d6}) necrotic damage on a failed saving throw, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the terrorgheist to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or grom a citical hit. On a success, the terrorgheist drops to 1 hit point instead. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"While in flight, the terrorgheist makes two attacks; one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Shriek Of The Damned {@recharge}",
+					"entries": [
+						"The terrorgheist lets loose a horrifying shriek, provided that it isn't in sunlight. This shriek has no effect on constructs and the undead. All other creatures within 30 feet of it that can hear it must make a {@dc 13} Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ({@damage 3d6}) psychic damage. "
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/I5uch21.png",
+			"traitTags": [
+				"Charge",
+				"Keen Senses",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Iriyan Playsurgeon",
+			"source": "Theophany",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 16,
+			"wis": 14,
+			"cha": 13,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Intercession (1/Turn)",
+					"entries": [
+						"Once per turn, when the playsurgeon hits a creature during its turn, it can force it to make a {@dc 14} Wisdom saving throw. On a failure, the creature loses access to a class feature (such as bardic inspiration), as the surgeon rearranges its mind."
+					]
+				},
+				{
+					"name": "Ethereal Jaunt",
+					"entries": [
+						"As an action, the iriyan playsurgeon can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The playsurgeon makes two psychic knife attacks."
+					]
+				},
+				{
+					"name": "Psychic Knife",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) psychic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/ztd6ePR.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Ogdan Fellborn",
+			"isNamedCreature": true,
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"plate armor, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 100",
+				"average": 190
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 20,
+			"int": 15,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"str": "+8",
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+6",
+				"dex": "+3"
+			},
+			"skill": {
+				"intimidation": "+6",
+				"history": "+6",
+				"religion": "+6",
+				"perception": "+7",
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Gnomish",
+				"Umbral",
+				"Celestial"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Fell Aura",
+					"entries": [
+						"A creature that starts its turn within 15 feet of Ogdan must succeed on a {@dc 17} Constitution saving throw or become {@condition poisoned} for 1 minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.",
+						"When a {@condition poisoned} creature starts its turn within the fell aura, it also takes 13 ({@damage 3d8}) necrotic damage on a failed saving throw, or half as much damage on a success."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ogdan makes two warhammer attacks. He can substitute one of those attacks with a shield bash."
+					]
+				},
+				{
+					"name": "Fell Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic and fire damage. On a critical hit, the target suffers a moderate necrotic wound."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage, plus 4 ({@damage 1d8}) necrotic damage. The target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. When Odgan knocks a creature {@condition prone} in this way, he can also choose to push it 10 feet away from him."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ogdan adds a +3 to his AC against a triggering attack. If he manages to block an attack that would hit him in this way, he can then use his shield bash against the attacker if they are in range."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Fell Brace",
+					"entries": [
+						"Ogdan gains 10 temporary hit points. While Ogdan has these hit points, a creature that hits him with a melee weapon attack takes 10 necrotic damage."
+					]
+				},
+				{
+					"name": "Shield Run (Costs 2 actions)",
+					"entries": [
+						"Ogdan lifts his shield in front of him and charges against an enemy, throwing himself at them with all his strength. Ogdan can move up to his movement speed without provoking opportunity attacks, straight towards an enemy within range and then hit them with a shield bash attack.",
+						"The target makes their saving throw with disadvantage, and on a failure, Ogdan can forgo rolling for damage and deal maximum damage to it (20 damage). If the target succeeds on its save, Ogdan falls {@condition prone}."
+					]
+				},
+				{
+					"name": "Blackstone Curse (Costs 3 actions)",
+					"entries": [
+						"Ogdan targets a creature he can see within 60 feet of him with the power hidden within the Black Keep's walls. The creature must have less than its maximum hit points, and must have taken necrotic damage within the last minute. The creature must make a {@dc 17} Constitution or Wisdom saving throw (target's choice). On a failure, the creature is cursed.",
+						"While the creature is cursed, any attack roll Ogdan makes against the target is a critical hit on a roll of 19 or 20 on the {@dice d20}. Additionally, the creature can't regain hit points through magical healing. If the creature casts a spell using divine magic (such as a cleric or paladin spell), it must succeed on a {@dc 17} Wisdom saving throw or take 13 ({@damage 3d8}) necrotic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/Ex10OOk.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"D",
+				"G"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"prone"
+			]
+		},
+		{
+			"name": "Vengeful Aspirant",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "7d8 + 7",
+				"average": 38
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Defiance",
+					"entries": [
+						"The vengeful aspirant can add its charisma modifier to its AC while it isn't {@condition incapacitated}.",
+						"When an attack targeting the aspirant misses, the aspirant can momentarily choose to forgo gaining this bonus, potentially causing the attack to hit. If it does, the aspirant can deal 3 damage to its attacker."
+					]
+				},
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The vengeful aspirant has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hateful Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage, and the target gains 1 point of hate."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Vengeful Cry",
+					"entries": [
+						"When the aspirant takes damage from a creature it can see within 60 feet of it, it can use its reaction to force its attacker to make a Wisdom saving throw. On a failure, the target takes a number of necrotic damage equal to the aspirant's missing hit points. The aspirant can't take this reaction if the triggering damage reduces it to 0 hit points."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/Wp90Fwj.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Shadowmancer",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "(16 with mage armor)"
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 18,
+			"wis": 13,
+			"cha": 12,
+			"save": {
+				"int": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+6",
+				"sleight of hand": "+6",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common",
+				"Umbral",
+				"Elvish"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadowmancer is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The shadowmancer has the following wizard spells prepared:",
+						"Cantrips (at will): claws of darkness, douselight, mage hand, shadow bite",
+						"1st level (4 slots): black ribbons, mage armor, shadow armor ",
+						"2nd level (3 slots): darkbolt, negative image, shadow puppets",
+						"3rd level (3 slots): dispel magic, legion, shadow tendrils",
+						"4th level (2 slots): arcane eye, shadow refuge",
+						"5th level (1 slot): anti-life shell"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The shadowmancer has advantage on saving throws against being {@condition charmed}, and magic can't put the shadowmancer to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadowmancer has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Summon Shadow (Recharges after a short or long rest)",
+					"entries": [
+						"The shadowmancer pulls energy from the Plane of Shadow, forming a shadow spirit out of it. The creature has the statistics of a shadow spirit created by a 5th level spell. The creature disappears after an hour, or when it drops to 0 hit points."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/GAQVsd1.png",
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"spellcastingTags": [
+				"CW"
+			]
+		},
+		{
+			"name": "Black Cavalry",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"splint armor, 19 while mounted"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"con": "+6",
+				"str": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"intimidation": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Mounted Combatant",
+					"entries": [
+						"The black cavalryman has a warhorse mount. While mounted, the cavalryman has a +2 bonus to its AC, and it has advantage on checks and saving throws made to remain mounted on its warhorse."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cavalryman makes two glaive attacks."
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Provoked Strike",
+					"entries": [
+						"When a creature enters the range of the cavalryman's glaive, it can use its reaction to make a glaive attack against it. On a hit, the creature's speed is reduced to 0."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/2UWqByn.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Fell Rider",
+			"source": "Theophany",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"plate, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 85",
+				"average": 161
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 20,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"con": "+9",
+				"wis": "+6",
+				"str": "+10",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+6",
+				"intimidation": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Umbral",
+				"Elvish"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The fell rider is a 17th-level spellcaster. Its spellcasting ability is Charisma (save {@dc 16}, +8 to hit with spell attacks). It has the following paladin spells prepared:",
+						"1st level (4 slots): hellish rebuke (necrotic), wrathful smite",
+						"2nd level (3 slots): silencing smite, hold person",
+						"3rd level (3 slots): dispel magic, irreversible smite",
+						"4th level (3 slots): aura of decay, freedom of movement",
+						"5th level (1 slots): destructive wave, dispel evil and good"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Mounted Combatant",
+					"entries": [
+						"The fell rider has a fell warhorse as its mount. While mounted, the fell rider has advantage on all saving throws, and any spells it casts that have a range of self also affect its mound.",
+						"The fell rider has advantage on ability checks and saving throws made to resist being knocked off its mount."
+					]
+				},
+				{
+					"name": "Aura of Fear",
+					"entries": [
+						"The fell rider emits an aura of black fear in a 10-foot radius around it. Any creature that starts its turn there or enters the aura for the first time on its turn must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened}. While {@condition frightened}, the creature has disadvantage on all saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fell rider makes two lance attacks"
+					]
+				},
+				{
+					"name": "Lance",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d12 + 6}) piercing damage, plus 13 ({@damage 2d12}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Culling Fear",
+					"entries": [
+						"When the fell rider causes a creature to be {@condition frightened} of it, it can make a lance attack against it if it is within range."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Fell Charge (Villain Action - Round 1)",
+					"entries": [
+						"The fell rider and its warhorse charge 60 feet in a straight line towards an enemy, and the warhorse uses its trampling charge. The target must make its saving throw with disadvantage, and if it falls {@condition prone}, the fell rider immediately makes a lance attack against it as the warhorse tramples it with its hooves."
+					]
+				},
+				{
+					"name": "Fell Brace (Villain Action - Round 2)",
+					"entries": [
+						"The fell rider gains 25 temporary hit points. While it has these hit points, any creature that hits it with a melee attack takes 25 necrotic damage."
+					]
+				},
+				{
+					"name": "Fell Glance (Villain Action - Round 3)",
+					"entries": [
+						"The fell rider glaces at a {@condition frightened} creature within 10 feet of it. The creature must succeed on a {@dc 16} Charisma saving throw or fall to 0 hit points."
+					]
+				},
+				{
+					"name": "Fell Spell (Villain Action - Round 4)",
+					"entries": [
+						"The fell rider casts a spell."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/2UWqByn.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Fell Warhorse",
+			"source": "Theophany",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"splint barding"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 66
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 2,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Fell Aura",
+					"entries": [
+						"The warhorse emits a fell aura in a 15-foot radius around it. Any creature that starts its turn in the aura, or first enters it on its turn must succeed on a {@dc 14} Constitution saving throw, or become {@condition poisoned} for 1 minute. Any affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the creature must succeed on a {@dc 14} Constitution saving throw or take 5 ({@damage 2d4}) necrotic damage and be unable to regain any hit points until the end of its next turn. A {@condition poisoned} creature has disadvantage on this saving throw."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"These beasts, long and completely imbued by the Malor'dah Ebonstone have become something alien, not completely living but not undead either. Within them is encapsulated the power of disrupting and undoing all life, and yet they have not been destroyed by it themselves."
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/wFY7GJU.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"prone"
+			]
+		},
+		{
+			"name": "Hateful Sorcerer",
+			"source": "Theophany",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 16,
+			"int": 13,
+			"wis": 11,
+			"cha": 18,
+			"save": {
+				"con": "+6",
+				"cha": "+7"
+			},
+			"passive": 10,
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The sorcerer's innate spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can cast the following spells:",
+						"3/Day each: fireball (channel - legendary action, go out with a bang).",
+						"1/Day (each): immolation."
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Scorned (1/Turn)",
+					"entries": [
+						"When the sorcerer damages a creature or affects it with a spell, the creature gains 1 point of hate, or a number of points equal to the spell's level. If a creature doesn't gain any hate points for an hour, its points reset to 0.",
+						"Once per turn, when the sorcerer damages a creature, it can deal extra psychic damage to it equal to its hate points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Vicious Eye",
+					"entries": [
+						"The sorcerer lets its hate pool around a creature it can see within 60 feet. The target must make a {@dc 15} Wisdom saving throw. The target has disadvantage on the save if it dealt damage to the sorcerer or its allies since the start of its last turn.",
+						"On a failure, the target takes 5 ({@damage 2d4}) psychic damage, and an equal number of hate points."
+					]
+				},
+				{
+					"name": "Vicious Scream {@recharge 5}",
+					"entries": [
+						"The sorcerer lets out a howling scream against those it hates. Any creatures of its choice within 30 feet of it that can hear it and have at least 1 hate point must make a {@dc 15} Wisdom saving throw. On a failure, a creature takes {@damage 1d6} psychic damage for each hate point it has (up to a maximum of {@dice 10d6}), and is {@condition stunned} for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns ending the effect on a success. A creature takes half as much damage on a success and isn't {@condition stunned}.",
+						"A creature that failed the saving throw by 5 or more, or that has more than 10 hate points also gains a minor psychic wound."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Vengeful Rebuke",
+					"entries": [
+						"When the sorcerer is damaged by a creature it can see within 60 feet of it, it can use its reaction to let out a vengeful insult. The creature must succeed on a {@dc 15} Wisdom saving throw or take {@damage 2d10} psychic damage, and half as much hate points. The creature takes an additional {@damage 1d10} psychic damage for each 10 hate points it has. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/P1eZD5h.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Shadowfell Stalker",
+			"source": "Theophany",
+			"size": "M",
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 50,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 19,
+			"con": 14,
+			"int": 10,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"wis": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"Auran",
+				"understands Common but doesn't speak it"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The stalker is {@condition invisible}."
+					]
+				},
+				{
+					"name": "Shadowfell Aura",
+					"entries": [
+						"Creatures within 15 feet of the Shadowfell Stalker have disadvantage on all saving throws and ability checks they make. Creature acclimated to the plane of shadow are immune to this effect."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The stalker makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Invisible Stalker",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"An invisible stalker is an air elemental that has been summoned from its native plane and transformed by powerful magic. Its sole purpose is to hunt down creatures and retrieve objects for its summoner. When it is defeated or the magic that binds it expires, an invisible stalker vanishes in a gust of wind.",
+									{
+										"name": "Directed Hunter",
+										"type": "entries",
+										"entries": [
+											"When an invisible stalker is created, it stays at its summoner's side until it is given a task to perform. If an assignment doesn't involve hunting down and slaying a specific creature or recovering an object, the magic that created the invisible stalker ends and the elemental is released. Otherwise, it completes the task, then returns to its summoner for more commands, forced to serve until the magic that binds it expires. If its summoner dies in the interim, the invisible stalker vanishes after completing its task.",
+											"An invisible stalker is an unwilling servant at best. It resents any undertaking assigned to it. A mission that requires significant time might drive the invisible stalker to pervert the intent of a command unless it is worded carefully."
+										]
+									},
+									{
+										"name": "Unseen Threat",
+										"type": "entries",
+										"entries": [
+											"Invisible stalkers are composed of air and are naturally invisible. A creature might hear and feel an invisible stalker in passing, but the elemental remains invisible even when it attacks. A spell that allows someone to see the invisible reveals only the invisible stalker's vague outline."
+										]
+									},
+									{
+										"name": "Elemental Nature",
+										"type": "entries",
+										"entries": [
+											"An invisible stalker requires no air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Invisible Stalker.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Invisible Stalker.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/invisible-stalker.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Uru",
+			"isNamedCreature": true,
+			"source": "Theophany",
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "(18 while flying)"
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 14,
+			"int": 17,
+			"wis": 14,
+			"cha": 22,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"deception": "+12",
+				"perception": "+8",
+				"insight": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 30 ft."
+			],
+			"passive": 18,
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Common",
+				"Celestial",
+				"Dwarven",
+				"Umbral"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Blank Mind",
+					"entries": [
+						"Uru is immune to any effect that would sense her emotions or read her thoughts, divination spells, and the {@condition charmed} condition. The effect even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target."
+					]
+				},
+				{
+					"name": "Mark of Phaedran",
+					"entries": [
+						"If Uru holds the hand of a willing creature for more than 1 minute, she implants the {@condition invisible} mark of Phaedran on the outside of its palm.",
+						"Uru can use her bonus action to cast the command or suggestion spell without requiring any components, targeting only a creature that has the mark. The target automatically fails its saving throw."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Uru has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage, plus 3 ({@damage 1d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Dark Lance",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 4}) piercing or necrotic damage, and the target must succeed on a {@dc 17} Wisdom saving throw or be {@condition paralyzed} for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+						"If the target of this attack is a surprised creature, the attack automatically hits and the target has disadvantage on the saving throw."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Purposeful Glance",
+					"entries": [
+						"When a creature that Uru can see within 60 feet of her makes an attack roll, ability check, or saving throw, Uru can use her reaction to force the creature to reroll the die once. She must do this before the outcome of the roll is determined, and her influence is undetectable."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Fly",
+					"entries": [
+						"Uru moves up to half of her movement speed towards a direction away from a hostile creature. She must be able to use her flying speed to do so, and this movement does not provoke attacks of opportunity. If she ends her move out of any creature's line of sight, she can turn {@condition invisible} until the start of her next turn."
+					]
+				},
+				{
+					"name": "Adorably Insidious (Costs 2 Actions)",
+					"entries": [
+						"Uru targets a creature within 60 feet of her that can see her, attempting to convince it that she is an innocent, pure angel. The creature must succeed on a {@dc 17} Wisdom saving throw, or become {@condition charmed} by Uru for 1 minute."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"Uru makes a swortsword attack. If she hits a creature that knows her true nature, it becomes {@condition blinded} until the start of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/AbsQfLy.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"CE"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"paralyzed"
+			]
+		}
+	]
+}
