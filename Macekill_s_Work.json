@@ -1,0 +1,1752 @@
+{
+	"siteVersion": "1.131.6",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MacekillsWork",
+				"abbreviation": "MKW",
+				"full": "Macekill's Work",
+				"url": "https://www.reddit.com/user/Macekill/submitted/",
+				"authors": [
+					"Macekill"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1625760011,
+		"dateLastModified": 1625760011
+	},
+	"monster": [
+		{
+			"name": "Prismatic Golem",
+			"source": "MacekillsWork",
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 150",
+				"average": 285
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 11,
+			"dex": 24,
+			"con": 20,
+			"int": 20,
+			"wis": 11,
+			"cha": 9,
+			"save": {
+				"dex": "+13",
+				"int": "+11",
+				"wis": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+11",
+				"acrobatics": "+13",
+				"stealth": "+13",
+				"perception": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 60 ft."
+			],
+			"passive": 22,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"radiant"
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"understands the languages of its creator",
+				"Telepathy 120ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The prismatic golem's innate spellcasting ability is Intelligence (spell save {@dc 19}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell pulse wave|EGW}",
+						"{@spell tongues}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cone of cold}",
+							"{@spell sickening radiance|XGE}"
+						],
+						"1e": [
+							"{@spell delayed blast fireball}",
+							"{@spell disintegrate}",
+							"{@spell prismatic wall}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Elemental Shift",
+					"entries": [
+						"At the start of each of the golem's turns, it can choose one of its resisted damage types and become immune to it until the start of its next turn, where it cycles to another one. The golem can not be immune to more than one damage type from this feature at a time."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The prismatic golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Legendary Resistances (3/day)",
+					"entries": [
+						"If the golem fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The prismatic golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Reflective Crystal",
+					"entries": [
+						"Any time the golem is targeted by a magic missile spell, a line spell, or a spell that requires a ranged attack roll, roll a {@dice d6}. On a 1 to 4, the prismatic golem is affected as normal. On a 5 to 6, the golem is unaffected, and the effect is reflected back at the caster as though it originated from the golem, turning the caster into the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The prismatic golem makes four melee attacks."
+					]
+				},
+				{
+					"name": "Stab",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) damage, plus 4 ({@damage 1d8}) of its choice from Acid, Fire, Cold, Force, Lightning, or Radiant damage."
+					]
+				},
+				{
+					"name": "Prismatic Beam",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 150/300 ft., up to two targets within 30ft of each other. {@h}32 ({@damage 5d10 + 5}) of its choice from Acid, Fire, Cold, Force, Lightning, or Radiant damage."
+					]
+				},
+				{
+					"name": "Prismatic Spray {@recharge 5}",
+					"entries": [
+						"Eight multicolored rays of light flash from the golem's head. Each creature in a 60-foot cone must make a {@dc 19} Dexterity saving throw. For each target, roll a {@dice d8} to determine which color ray affects it.",
+						"1-Red. The target takes {@damage 10d6} fire damage on a failed save, or half as much damage on a successful one.",
+						"2-Orange. The target takes {@damage 10d6} acid damage on a failed save, or half as much damage on a successful one.",
+						"3-Yellow. The target takes {@damage 10d6} lightning damage on a failed save, or half as much damage on a successful one.",
+						"4-Green. The target takes {@damage 10d6} poison damage on a failed save, or half as much damage on a successful one.",
+						"5-Blue. The target takes {@damage 10d6} cold damage on a failed save, or half as much damage on a successful one.",
+						"6-Indigo. On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the {@condition petrified} condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind.",
+						"7-Violet. On a failed save, the target is {@condition blinded}. It must then make a Wisdom saving throw at the start of the golem's next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer {@condition blinded}. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)",
+						"8-Special. The target is struck by two rays. Roll twice more, rerolling any 8."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Rapid Adaptation",
+					"entries": [
+						"In response to taking damage that it is resistant to, the Prismatic Golem uses its Elemental Shift feature, becoming immune to the damage type taken."
+					]
+				},
+				{
+					"name": "Stab",
+					"entries": [
+						"The Prismatic Golem makes a stab attack."
+					]
+				},
+				{
+					"name": "Relocate (Costs 2 Actions)",
+					"entries": [
+						"The Prismatic Golem moves up to its movement speed and takes the hide action."
+					]
+				},
+				{
+					"name": "Shatter the World (Costs 2 Actions)",
+					"entries": [
+						"The Prismatic Golem causes crystal spikes to erupt from the ground in a 30-foot radius centered on it. The area becomes difficult terrain until the start of its next turn. Any creature, other than the Prismatic Golem, takes 9 ({@damage 2d8}) piercing damage for every 5 feet it moves on those spikes."
+					]
+				},
+				{
+					"name": "Cast a spell (Costs 3 Actions)",
+					"entries": [
+						"The Prismatic Golem casts a spell."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Perfect Beings. While not the largest, or by far the strongest construct crafted, the prismatic golem may still be one of the deadliest to have joined the ranks of those already well known. The one thing this construct has above all else, is it's ability to think independent from its master.",
+					"Elusive Geodes. The prismatic geode is one very rarely found, and only in areas that are saturated with magic. These geodes are notoriously expensive in the material plane as their retrieval is something of a journey in and of itself. While that might not be the case in other planes of existence, it is one of the larger reasons why there are very few of them being sold and even fewer being made into one of the world's most advanced constructs.",
+					"A Collective. While the process is similar in crafting a prismatic golem, the difficult part is drawing in many, if not all of the different elemental spirits from their respective planes of existence to fuel this magic construct with life. Perhaps it is because of this fused consciousness that the prismatic golem is able to breach the surface of sapience. While incredibly intelligent, the prismatic golem is still almost infantile in its mentality until it can mentally grow under the tutelage of its creator, which is why these creations usually take on the mannerisms and ideologies of those who own them.",
+					"However, in the rare occurrence that one is either broken away from its subservient nature or defects, it will develop naturally through its environment; which isn't always the best result should one become as independent. After all, it could be intelligent, but it could be an instinctual intelligence instead of sapience.",
+					"Master of the Elements. Prismatic golems are -- thanks to its rare core of all things -- masters of the elemental forces of the arcane. They are heavily resistant to most magical forces, and their polished onyx bodies have a tendency to reflect such forces back at the assailant. In the rare occurrence that the prismatic golem is forced to defend itself or its master, it does such with incredible efficiency. It will focus the most perceived threat to either unconsciousness or death, or it will focus those that can aid their allies through magic means. From its prismatic visage, it can create luminescent beams of all elemental forces, not to mention its geometric limbs, which all end in sharpened points. Hope you can run, for it is quick and more dexterous than most initially anticipate: But that is usually their last mistake."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/30724125-1526-45f5-9277-b180117aba61/dbvbyw5-3357d00b-0afe-4876-8a0f-86bbfe7385f5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzA3MjQxMjUtMTUyNi00NWY1LTkyNzctYjE4MDExN2FiYTYxXC9kYnZieXc1LTMzNTdkMDBiLTBhZmUtNDg3Ni04YTBmLTg2YmJmZTczODVmNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.o6R7-0AdRU6HZ26KEOr86k9hTIVdsPA6qe6Q03GvArs"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/RmqFxr2.png",
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			]
+		},
+		{
+			"name": "Prismatic Shard",
+			"source": "MacekillsWork",
+			"size": "S",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d6 + 32",
+				"average": 60
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 9,
+			"dex": 19,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"radiant"
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"understands the languages of its creator"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Elemental Shift",
+					"entries": [
+						"At the start of each of the shard's turns, it can choose one of its resisted damage types and become immune to it until the start of its next turn, where it cycles to another one. The shard can not be immune to more than one damage type from this feature at a time."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The prismatic shard is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Linked Up",
+					"entries": [
+						"When the shard is within 60 feet of the prismatic golem, the prismatic golem can act as if it was casting a spell, or using its prismatic spray ability from the shard's location - in addition to being able to see through the shard as if the prismatic golem was in its location."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The prismatic shard has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Prismatic Beam",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/150 ft., up to two targets within 30ft of each other. {@h}20 ({@damage 3d10 + 4}) of its choice from Acid, Fire, Cold, Force, Lightning, or Radiant damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"When the creator of the Prismatic Golem has to crack away at the geode containing its potential masterpiece, sometimes there lay small chunks of these prismatic shards. While they cannot be used to create the Prismatic Golem, they can be sculpted into proxies for the golem to utilize in either combat, or for utility regarding their owner.",
+					"Small, but Dangerous. The Prismatic Shard is a lesser construct chipped away from that of a Prismatic Golem's core. While diminutive in size, it is still able to lash out with prismatic beams of elemental force; as well as act as a proxy for the Prismatic Golem, to work its innate spellcasting through, or even its Prismatic Spray ability. Beware the floating shards.",
+					"Fragments of a whole. Prismatic Shards by themselves aren't the most intelligent, but when within the proximity of a Prismatic Golem, the Prismatic Shard falls into line as if slotted into a puzzle that required it as the last piece. A Prismatic Golem controls these shards with ruthless efficiency, able to move and even make them attack in unison against a single entity.",
+					"In the Wilderness. It's very rare that one would see a Prismatic Shard in the wilderness. Usually, they are owned by archmages, or incredibly powerful merchants, or nobles who can also afford the golem in tandem. But, if they are in the wilderness, both the golem and the shards usually stick to more mountainous, or underground locales. And in even rarer cases, they take root in old abandoned dungeons."
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/RmqFxr2.png",
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"miscTags": [
+				"RW"
+			]
+		},
+		{
+			"name": "Yeenoghu's Champion",
+			"source": "MacekillsWork",
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"plate mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 95",
+				"average": 200
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+7",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Gnoll"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Yeenoghu's Champion's spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell dispel magic}",
+							"{@spell fear}",
+							"{@spell shadow of moil|XGE}"
+						],
+						"1e": [
+							"{@spell control weather}",
+							"{@spell finger of death}",
+							"{@spell true seeing}"
+						]
+					},
+					"will": [
+						"{@spell detect magic}",
+						"{@spell thaumaturgy}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Ravenous Hunger",
+					"entries": [
+						"Any creature within 15 feet of the Champion has disadvantage on its death saving throws. In addition, any creature with the Rampage trait can make a bite attack as a bonus action while within the radius of the Champion's Aura."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Yeenoghu's Champion fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yeenoghu's champion has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Yeenoghu's Champion makes three attacks with its blade of woe or three attacks with its warbow. If a melee attack hits, the champion can cause it to create an additional effect of its choice or at random (each effect can be used only once per Multiattack):",
+						"1-Decaying Strike. The attack deals an extra 11 ({@damage 2d10}) necrotic damage.",
+						"2-Paralyzing Cleave. The target must succeed on a {@dc 15} Constitution saving throw or be {@condition paralyzed} until the start of the Champion's next turn.",
+						"3-Crippling Swipe. The target must succeed on a {@dc 15} Dexterity saving throw or have its movement speed halved until the end of its next turn."
+					]
+				},
+				{
+					"name": "Blade of Woe",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Warbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The champion adds 4 to its AC against one melee attack that would hit it. To do so, the champion must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Charge and Consume",
+					"entries": [
+						"The champion moves up to its speed and makes a bite attack. If the attack hits, the champion regains hit points equal to half the damage dealt."
+					]
+				},
+				{
+					"name": "Kneel Before Me",
+					"entries": [
+						"The champion makes a blade of Woe attack. If the attack hits, the target must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the saving throw fails by 5 or more, the target is considered {@condition incapacitated} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Cast a spell (Costs 2 Actions)",
+					"entries": [
+						"The champion casts a spell."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Yeenoghu's Chosen.",
+					"\"These pitiful humans think they can repel our might! We have been blessed by the lord himself! Look upon our chief and see how he has ascended! We have been showered in gifts and we must use them to the best of our abilities! To the endless hunger! To Yeenoghu!\" - Shamaness Shiva",
+					"A Champion Born. When a tribe of gnolls are particularly well off in food, Flinds, leaders of their war bands begin to sacrifice live and dead flesh to their blackened altars for their god in the ravenous abyss: Yeenoghu, who upon seeing such wealth will choose to bestow upon their acolytes a withered, black heart. When a Flind consumes this heart, they undergo a painful transformation. Many do not survive the undertaking, but those who do become a Champion of Yeenoghu. Blessed by the flesh of their god and gifted a fragment of his power.",
+					"Bane to the Living. When a Champion is born, many gnolls may leave their current tribe and flock to the birth of a new idol. In these cases, a gnoll war band may grow to the hundreds. Humans refer to this phenomenon as \"The Umbra Exodus\", for it ushers in a grand omen of famine and war. Kingdoms may take up arms to slay a Champion, but it is usually deferred to adventuring parties on the premise that there may be great spoils to recover, in addition to being paid by the guild, or kingdom for their services.",
+					"The Ravenous Portal. When a Champion's war band grows great enough, Yeenoghu showers them in gifts. Be it in loyal demons, divine power, or terrifying armaments. However, when such a connection is born, most Champions work their band of gnolls in creating permanent portals to the layer of the Abyss in which Yeenoghu resides. These Champions hope to usher in a new age for the grand lord himself. With such gifts, it is only a matter of time before a Champion has the strength to topple a kingdom. They wish to bring death, famine and disease to their enemies and such a self-fulfilling prophecy may come about; should adventurers shirk such innocuous quests when they hear word of a few wandering gnolls attacking the countryside.",
+					"The Endless Hunger. It is spoken, that a day will come when darkness reigns over the lands; when famine is so common, that man will have to take to consuming his own to survive. When civilization has crumbled and history of man's forefathers are but a whisper on the wind. Such prophecy comes when the six maws of Yeenoghu are born, children to the Beast of Butchery, they will herald an entrance to the material plane for their grand lord. They will become generals in his army, carving grevious wounds into the world of man and other races alike until there is nothing left. The cult of the Endless Hunger seeks to enact this vision, but perhaps outside forces may thwart it yet. All it takes is a roll of the dice of fate.",
+					"The Champion's Lair",
+					"Like all gnolls, A champion of Yeenoghu usually places their war bands in mountainous, or plains-like environments. Of course, that's just the surrounding terrain, as the gnolls usually like to burrow into the earth, or take up already naturally developed caves and caverns. But, when a champion arises, they turn a war band's cave into a fortress. Defending the outer portions of the cave tunnels with fortifications of the stone and bone varieties.",
+					"An adventurer will know they've stumbled upon a champion's territory by the lack of resources surrounding the lair. Not to mention, the numerous bone spires that ascend five or so feet - usually accentuated by a long dead corpse impaled upon its length. These are dotted around the landscape as a show of intimidation. And if that isn't terrifying enough, the Shoosuva may be.",
+					"Lair Actions",
+					"On Initiative count 20 (losing initiative ties), Yeenoghu's Champion can take a lair action to cause one of the following effects: it can't use the same effect two rounds in a row:",
+					"Each gnoll, demon or hyena that the Champion can see can use its reaction to move up to its speed.",
+					"Until the next initiative count 20, all gnolls, demons and hyenas within the lair are enraged, causing them to have advantage on melee weapon attack rolls and causing attack rolls to have advantage against them.",
+					"The Champion causes a maw of Yeenoghu to burst forth from a portal at a point it can see within 50 feet of them. Any creature in the space where the maw emerges must make a DC 18 Dexterity saving throw. On a failed save, the creature takes 18 (4d8) piercing damage and is restrained by being latched onto by the maw. A creature can use an action to remove itself (or a creature it can reach) from the maw, ending the restrained condition.",
+					"Regional Effects",
+					"The region containing the Champion's lair is warped by Yeenoghu's magic, creating one or more of the following effects:",
+					"Within 1 mile of the lair, large bone spikes grow out of the ground and stone surfaces. Gnolls impale the bodies of the slain on these spikes.",
+					"Predatory beasts within 6 miles of the lair become unusually savage, killing far more than what they need for food. Carcasses of prey are left to rot in an unnatural display of wasteful slaughter.",
+					"If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 15 Wisdom saving throw or descend into a madness determined by the Indefinite Madness table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+					"If the Champion dies, these effects fade over the course of 1d10 days."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d5b8102a-71f7-444a-a3a7-8b4adb01de5e/d9b1eww-256e4396-131c-4ec7-8b62-c901d808f5b1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDViODEwMmEtNzFmNy00NDRhLWEzYTctOGI0YWRiMDFkZTVlXC9kOWIxZXd3LTI1NmU0Mzk2LTEzMWMtNGVjNy04YjYyLWM5MDFkODA4ZjViMS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Xq7smRgZLnujdgc63BADcylzYflntBRjgKMBM0Pvbqs"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/7rpHCdI.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Vaurdres",
+			"source": "MacekillsWork",
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d12 + 68",
+				"average": 178
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false,
+				"swim": 60
+			},
+			"str": 22,
+			"dex": 15,
+			"con": 19,
+			"int": 14,
+			"wis": 14,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"con": "+8",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"perception": "+10",
+				"persuasion": "+7",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"lightning"
+			],
+			"languages": [
+				"Aquan",
+				"Draconic"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Spell Turning",
+					"entries": [
+						"The vaurdres has advantage on a saving throw against any spell that targets only the vaurdres (not an area). If the vaurdres's saving throw is successful and the spell is of 4th level or lower, the spell has no effect on the vaurdres and instead targets the caster."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The vaurdres can breathe air and water."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever the vaurdres is subjected to lightning damage, it takes no damage and regains a number of hit points equal to half the lightning damage dealt."
+					]
+				},
+				{
+					"name": "Shifting Camouflage",
+					"entries": [
+						"The vaurdres has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vaurdres makes three attacks: one with its bite, one with its claws, and one with its tentacles. When its breath weapon is available, it can use the breath in place of its bite or its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 5 ({@damage 1d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}, and the vaurdres can't use its tentacles on another target."
+					]
+				},
+				{
+					"name": "Breath Weapon {@recharge 5}",
+					"entries": [
+						"The vaurdres exhales arcs of lightning in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 52 ({@damage 8d12}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"fluff": {
+				"entries": [
+					"Born from experimentation. Like any other chimera, the Vaurdres was originally created through the magics of a powerful mage fusing together animals, beasts - whatever they were able to get their hands on. The Vaurdres was one such monstrosity. A combination of a blue dragon (typically), Velociraptors or tyrannosaurus rex, and strange aquatic life. Usually either squid or octopus.",
+					"Unique variant of Chimera. While chimera are usually three-headed creatures, the Vaurdres seems to share some features with its other combined animals, but it's a singular entity. Consisting of a dragon-like skull with horns, a bipedal Tyrannosaurus-like body with elongated, clawed forearms, a pearlescent blue-scaled body, eel-like tail, webbed digits and wings and a number of barnacle-like protrusions across its hide that erupt with barbed tentacles boasting hooked suction cups. Vaurdres translated to the common tongue titles this creature the \"Coral Dragon\", given its brightly colored exterior and its habitat.",
+					"Exotic, but deadly. The Vaurdres is known to hang around coral reefs and tropical waters, along the shallow shores of land masses or island. It feasts upon the aquatic life that lies within, and sometimes decides to walk the land and stalk the fauna roaming about. Regardless of its brightly colored hide, it's strangely able to camouflage itself by subtly shifting its scale color to the surrounding terrain. Aside from that, it is intelligent enough to speak and understand creatures, but it's most definitely garnered much of its personality from its draconic nature. It's covetous, can sometimes have a lair and is much more cunning than most think. Some variants of the Vaurdres live in swamps, sulforus springs or anything inbetween.",
+					"Sea Pirates. The Vaurdres is intelligent enough to make deals with pirates and is one of the few reasons why boats are pillaged and destroyed well before they get to their destination. To make a deal with this creature requires either a silver tongue, or enough wealth to keep it placated long enough before it requires another lump sum to keep their arrangement going.",
+					"It isn't uncommon for a Vaurdres to become the leader of a ring of pirates, if it has enough wealth and power to maintain it, but this rarely ever occurs. However, Vaurdres that live long enough are said to grow nearly as large as an ancient dragon. Very few of those have ever been seen.",
+					"Variant: Vaurdres as Innate Spellcasters. Vaurdres are innately magical creatures that can master a few spells as they age, using this variant.",
+					"This vaurdres can innately cast three spells, once per day each, requiring no material components. Each spell's level can be no higher than 4th. The vaurdres's spell save DC is 15, and it has +7 to hit with spell attacks. See the spell page for a list of spells the vaurdres is capable of casting. A selection of examples are shown below",
+					"Storm Sphere",
+					"Fire Shield (Cold only)",
+					"Lightning Bolt",
+					"Wall of Sand",
+					"Thunder Step",
+					"Slow"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/31a92255-861d-40f4-ad78-a2efd309b0d2/d9k5wdn-b845a31c-69e5-4237-a134-0fd79e1bc991.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzFhOTIyNTUtODYxZC00MGY0LWFkNzgtYTJlZmQzMDliMGQyXC9kOWs1d2RuLWI4NDVhMzFjLTY5ZTUtNDIzNy1hMTM0LTBmZDc5ZTFiYzk5MS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.OBhS1H2dU6JIItDUFreZNLttfo6OZSI8zuVLmh1z8zg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/twlyuyL.png",
+			"traitTags": [
+				"Amphibious",
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AQ",
+				"DR"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Blink Walker",
+			"source": "MacekillsWork",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 5,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 19,
+			"wis": 17,
+			"cha": 17,
+			"save": {
+				"con": "+5",
+				"int": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"persuasion": "+6",
+				"stealth": "+5",
+				"insight": "+6",
+				"intimidation": "+6",
+				"perception": "+9"
+			},
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 19,
+			"resist": [
+				"force",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"All",
+				"telepathy 120ft."
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The Blink Walker's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell levitate}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell absorb elements|XGE}",
+							"{@spell blindness/deafness}",
+							"{@spell crown of madness}",
+							"{@spell misty step}"
+						],
+						"1e": [
+							"{@spell hold monster}",
+							"{@spell plane shift} (self only)",
+							"{@spell synaptic static|XGE}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The Blink Walker has advantage on Wisdom (Perception) checks relying on hearing."
+					]
+				},
+				{
+					"name": "Aberrant Displacement",
+					"entries": [
+						"The Blink Walker's strange existence causes its mortal coil to phase in and out of reality in erratic intervals, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the Blink Walker is {@condition incapacitated} or has a speed of 0."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The blink walker has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blink Walker makes two attacks with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage, plus 10 ({@damage 3d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Maddening Gaze {@recharge 5}",
+					"entries": [
+						"The Blink Walker digs into the mind of a creature within 60 feet of it, attempting to siphon its knowledge and strongest memories. The creature must succeed on a {@dc 15} Intelligence saving throw or take 40 ({@damage 8d8 + 4}) psychic damage on a failed saving throw and become {@condition stunned} for 1 minute as a memory is consumed. On a success the creature takes half damage and is not {@condition stunned}. If a creature fails this save by 5 or more, they are instead {@condition paralyzed} for the duration and gain a long term form of madness, which lasts for {@dice 1d10 x 2} days, or until cured by spells or effects similar to Greater Restoration."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ethereal Phaseshift",
+					"entries": [
+						"The Blink Walker vibrates and phases in and out of existence. It adds 3 to its AC against one melee attack that would hit it. If this bonus causes the attack to miss, the attack phases through the Blink Walker and the Blink Walker can immediately retaliate with a Claw attack as part of the same reaction."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Myth? Or terrifying Truth?",
+					"\"Not many know just what these strange alien creatures may be, but tales of adventurers encountering these aberrant humanoids are usually left in either forgetfulness, or lose. Records of various encounters describe them as being incredibly tall, lanky, with longer limbs than they have any right to have. Stained, rubbery flesh the color of lilacs that darkens in various portions of its body and is unnervingly featureless.",
+					"While it has a head, it has no visage. Only the blank wall of bone and flesh that amounts to a creature that does not belong in this world or any other. Some people describe it having any number of large, spiraling horns that jut outward from its cranium. From the descriptions of an adventurer who saw one, an artist has been able to give others a more in-depth view of this abomination. See to the right of this tome.",
+					"As you can see, this creature is most definitely of the far realms. Nothing this alien could pass for anything other than such maddening creations. And on that note, we sha- ...Oh, I'm sorry, what were we talking about?\" ",
+					"-Archmage Vonmon Turros, during the Great Elusion Phenomenon",
+					"Beings of the Elders Dreams",
+					"The Blink Walker. A strange aberrant creature born from the dreams of the sleeping elder gods within the far realms. Having been born in a similar fashion to creatures from a beholder, the Blink Walker's existence is much, much more fickle in its persistence to stay within the realms of men; or to blink out of existence should the god's dreams shift like the ever moving tide. The Blink Walker knows its days are numbered, but few have figured the method of extending their lives; which adventurers find disadvantageous. You see, the way the Blink Walker extends its life is by consuming and assimilating memories from creatures that are more...permanent, extending that same permanence onto the Blink Walker for a time. (Ie. When a creature fails the Maddening Gaze & Whisper ability saving throw. Shown in the statblock.)",
+					"When Blink Walkers die, it's ironic that in their death, they rapidly create life themselves that is evermore permanent than they could ever be; even thriving in the most inhospitible of places. Massive lavender Weeping Willows that extend from their corpses and grow for untold centuries. Tendril-like branches extending outwards in strange, alien patterns that give the exotic gem-like tangles of leaves a more unique beauty. Strangely enough, the fruit it bears (which looks terrifying like its head, albeit much smaller) is rumored to have strange ethereal properties when eaten raw and when processed correctly, can even be used to help recall memories that have been locked away, consumed by the Blink Walker, or have been magically sealed or removed (Including the magics of the Feywild that causes one to forget when left).",
+					"To those who freely give their sins",
+					"Although uncommon, the Blink Walker is sometimes known to even make deals with creatures native to certain planes of existence, consuming unwanted memories for a fraction of its power. With more memories consumed, certain Blink Walkers gain permanence for the rest of their days and even finding time to form a personality and grow as a creature as time continues. What the Blink Walker doesn't know, is that while it might never age and live untold centuries, it's appetite for memories grows with the decades, forcing them to continue making pacts with creatures to satiate its need for survival. These Blink Walkers are very rare indeed, and most who have grown so old are usually named members of their strange race.",
+					"Creatures who so freely give their memories are bestowed more and more power with each memory given, and while pacts passively increase both the Elder Blink Walker and the contractee, it is only ever a dangerous gamble. After all, the Blink Walker is a selfish creature that would rather satiate its hunger than truly aid those of its pact.",
+					"When a Elder Blink Walker reaches the peak of its evolution through assimilating memories its consumed, it finds that consuming the consistent amount currently does little to fill its metaphorical stomach. So? Like any irrational creature, it begins to gorge itself on stored memories, or even actively stealing them for creatures within or around its lair.",
+					"This Phenomenon (The Great Elusion) usually tells experienced adventurers and veteran's alike that a powerful Blink Walker has make its stake in the material plane. As one will likely find great swathes of creatures in all cities and towns alike remembering less and less as memories are stolen from them in a desperate attempt to keep the Elder Blink Walker alive.",
+					"Now, some older Blink Walkers are intelligent enough to realize this small flaw decades before it happens, actively eating the bare minimum to keep itself both semi-full and stable within its own existence. These Blink Walkers have the potential to become even more powerful than Elder Blink Walkers and are usually the most cunning. It takes stronger adventurers to even find these particular aberrants and even stronger individuals to fell it."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/000/831/005/4k/bogdan-rezunenko-2.jpg?1443929252"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/BdV029V.png",
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Elder Blink Walker",
+			"source": "MacekillsWork",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d10 + 88",
+				"average": 209
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 19,
+			"int": 22,
+			"wis": 20,
+			"cha": 22,
+			"save": {
+				"con": "+10",
+				"int": "+12",
+				"wis": "+11",
+				"cha": "+12"
+			},
+			"skill": {
+				"perception": "+17",
+				"persuasion": "+12",
+				"deception": "+12",
+				"intimidation": "+12",
+				"insight": "+11",
+				"stealth": "+10"
+			},
+			"senses": [
+				"blindsight 240 ft. (blind beyond this radius)"
+			],
+			"passive": 27,
+			"resist": [
+				"force",
+				"lightning",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"All",
+				"telepathy 240ft."
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The Elder Blink Walker's innate spellcasting ability is Intelligence (spell save {@dc 20} and +12 to hit). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell hold person}",
+						"{@spell levitate}",
+						"{@spell phantasmal killer}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell counterspell}",
+							"{@spell dissonant whispers} (4th-level)",
+							"{@spell slow}"
+						],
+						"1e": [
+							"{@spell crown of stars|XGE}",
+							"{@spell plane shift} (self only)",
+							"{@spell reality break|EGW}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The elder blink walker has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The elder blink walker has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Aberrant Displacement",
+					"entries": [
+						"The Elder Blink Walker's strange existence causes its mortal coil to phase in and out of reality in erratic intervals, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the Blink Walker is {@condition incapacitated} or has a speed of 0."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the elder blink walker fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Elder Blink Walker makes two attacks with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}20 ({@damage 4d6 + 6}) slashing damage, plus 14 ({@damage 4d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Maddening Whispers {@recharge 5}",
+					"entries": [
+						"The Elder Blink Walker digs into the minds of each creature within a 60-foot-cone, attempting to siphon their knowledge and strongest memories. Each creature within the cone must succeed on a {@dc 20} Intelligence saving throw or take 60 ({@damage 12d8 + 6}) psychic damage on a failed saving throw and become {@condition stunned} for 1 minute as a memory is consumed. On a success the creature takes half damage and is not {@condition stunned}. If a creature fails this save by 5 or more, they are instead {@condition paralyzed} for the duration and gain a long term form of madness, which lasts for {@dice 1d10 x 5} days, or until cured by spells or effects similar to Greater Restoration."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ethereal Phaseshift",
+					"entries": [
+						"The Elder Blink Walker vibrates and phases in and out of existence. It adds 5 to its AC against one melee attack that would hit it. If this bonus causes the attack to miss, the attack phases through the Elder Blink Walker and the Elder Blink Walker can immediately retaliate with a Claw attack as part of the same reaction."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"The Elder Blink Walker magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+					]
+				},
+				{
+					"name": "Synaptic Overload (Costs 2 Actions)",
+					"entries": [
+						"The Elder Blink Walker forces the veil between realms apart, bathing nearby creatures in the ambient madness of the Far Realm. Each creature of its choice in a 10-foot radius centered on itself must make a {@dc 20} Dexterity saving throw, taking 28 ({@damage 8d6}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Paralyzing Gaze (Costs 3 Actions)",
+					"entries": [
+						"The Elder Blink Walker targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a {@dc 15} Constitution saving throw or be {@condition paralyzed} until either it takes damage, or is snapped out of it using an action."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"The Elder Blink Walker can cast a spell."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"One must be cautious when dealing with the Elder Blink Walker, for in its growth, it's become much more intelligent and much more cunning while it's roamed the material plane. Elder Blink Walkers usually gain this title when they've lived longer than a decade. After all, to sustain themselves for that long is a challenge for such an aberrant creation.",
+					"Those that live for over a decade have the knowledge and the intellect to rifle through its collection of assimilated memories, learning from its meals as a means of making future meals easier to obtain. Those that have slain stronger enemies and adventurer's alike, likely gain the knowledge of certain creatures they have fought. In doing so, some Elders will begin to build themselves a lair, however, unlike creatures native to the plane it resides, it can move its lair with enough time and psionic power. You see, the Elder uses its enhanced psionics to create a sort of Demi-plane in a location near it. With enough time and with no interruptions, it can drag a portion of the Plane in which it resides into its own realm.",
+					"Sometimes its easy to tell you've stepped into an area near the Elders Lair, when the surrounding terrain is twisted and alien like itself. Sometimes they're cunning enough to make it seem like you've not even stepped into their territory. Be mindful, as while individuals don't need to be close to the lair to be effected by it, the Elders reach within its territory is sometimes deceptive.",
+					"An Elder Blink Walkers Lair",
+					"Elder Blink Walkers lair in any place that can be hidden in plain sight. Sometimes it might be on the hill next to a small village, or perhaps the mountain at the back of a large city. But the advantage of an Elder Blink Walker, is that this creature is able to move its lair as it pleases, as all it needs to do is force its will upon the plane it resides and gradually fuse the demi-plane in which its lair resides and that of the surrounding landscape.",
+					"This often isn't realized until mass memory loss occurs, or as scholars have called it: The Great Elusion Phenomenon. When an Elder Blink Walker resides for too long in a singular area, people have been known to enter the territory and leave with massive amounts of blanks in their memory; appearing to be gone for days, weeks or even rarely months at a time. The Lair itself however is usually constructed in an alien cave system of sorts where walls have the texture of flesh and the tunnels pulse with the beat of an alien heart.",
+					"While the Blink Walker has no servants, because the veil between its demi-plane and the Far Realm are thin, aberrations are known to phase into its Lair.",
+					"Lair Actions",
+					"On initiative count 20 (losing initiative ties), the Elder Blink Walker takes a lair action to cause one of the following effects; the Elder Blink Walker can’t use the same effect two rounds in a row:",
+					"The Elder Blink Walker tears a rift in the planes, thrusting its clawed hand through at a creature it can see within 120 feet of it. The creature must make a DC 15 Dexterity saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one.",
+					"The Elder Blink Walker bends the realm around itself in a 30-foot radius, letting in the silent atmosphere of the void. Each creature other than the Elder Blink Walker in that area must succeed on a DC 15 Wisdom saving throw or be effected by the Silence spell until initiative count 20. While effected by the spell in this way, the creature is also deafened.",
+					"The Elder Blink Walker thrusts a section of the void in a 20-foot-radius sphere centered on a point the Elder Blink Walker can see within 120 feet of it. The area within the sphere is heavily obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the darkness must succeed on a DC 13 Wisdom saving throw or be frightened until the end of its turn. While frightened in this way, a creature is incapacitated.",
+					"Regional Effects",
+					"The region containing a Elder Blink Walker's lair is warped by the aberrant magic of its nature, which creates one or more of the following effects:",
+					"Bouts of temporary amnesia are common within 6 miles of the Elder Blink Walker's lair.",
+					"Plant sources within 1 mile of the lair are supernaturally alien and tainted by the Far Realm.",
+					"Bodies of water within 1 mile of the Elder Blink Walker's lair form portals to the Far Realm, allowing Aberrations into the world to dwell nearby.",
+					"If the Elder Blink Walker dies, these effects fade over the course of 1d10 days, aside from the memory lose if you were personally affected by it's Maddening Whisper ability."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/000/831/005/4k/bogdan-rezunenko-2.jpg?1443929252"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/BdV029V.png",
+			"traitTags": [
+				"Keen Senses",
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"stunned"
+			]
+		},
+		{
+			"name": "Shocking Zombie Brute",
+			"source": "MacekillsWork",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 6,
+			"wis": 6,
+			"cha": 6,
+			"save": {
+				"str": "+10",
+				"con": "+9",
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Electrifying Unlife",
+					"entries": [
+						"The lightning rod embedded in the shocking zombie brute grants it great power. While this rod remains in the zombie, it has advantage on constitution saving throws made for its undead fortitude trait, gains the Lightning Absorption, Static Shock and Overload traits and deals additional lightning damage with its fists. This rod can be removed with a {@dc 25} Strength check, although the person removing it takes 18 ({@damage 6d6}) lightning damage, regardless of a success or fail. If the rod is removed, the shocking zombie brute loses all the mentioned traits above. This rod acts as a magic item detailed below."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever the shocking zombie brute is subjected to lightning damage, it takes no damage and regains a number of hit points equal to half the lightning damage dealt."
+					]
+				},
+				{
+					"name": "Overload",
+					"entries": [
+						"If the shocking zombie brute fails its undead fortitude saving throw, or is killed by a critical hit, or radiant damage and has the lightning rod still embedded in its chest, each creature within 10ft of the shocking zombie brute must make a {@dc 16} Dexterity saving throw or take 32 ({@damage 8d8}) lightning damage on a failed save, or half on a successful one. The lightning rod shatters from the release of a contained lightning storm, leaving glowing white shards of metal in the vicinity of the charred undead."
+					]
+				},
+				{
+					"name": "Static Shock",
+					"entries": [
+						"When the shocking zombie brute takes damage of any type but psychic, each creature within 5 feet of the shocking zombie brute takes 9 ({@damage 2d8}) lightning damage."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the shocking zombie brute to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the shocking zombie brute drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shocking zombie brute makes two fist attacks."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage, plus 4 ({@damage 1d8}) lightning damage."
+					]
+				},
+				{
+					"name": "Arcing Bolts {@recharge 5}",
+					"entries": [
+						"Each creature within a 20 ft radius centered on the shocking zombie brute must make a {@dc 16} Constitution saving throw or take 35 ({@damage 10d6}) lightning damage on a failed save, or half on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Abomination of Experimentation",
+					"\"I'm surprised you were able to retrieve this specimen in relatively good condition. I will have to pay you in addition to what we initially agreed. Very good, very good indeed. I suppose I'll have t- ah! ...Even in death, the rod still contains a surprising amount of arcane energy. I will have to be more careful. Zok, be useful and get me my- why are you looking at me that way? Is something on my face?\" - Last recorded words of Archmagus Volmar, before his untimely death at the hands of this undead creature.",
+					"The Shocking Zombie Brute seems to be an experiment created by necromantic means, melding and sculpting flesh and increasing the mass of a once normal humanoid body. Usually the product of mages who care not for the morality of their experiments, they will delve into the darker arts of the arcane in a means of protecting themselves and their self interests. The Shocking Zombie Brute is as deadly as it is a spectacle. Most arcane practitioners initially find the creation fascinating, but quickly realize that the way it was created has left it in a state that is incapable of death, as the arcane shock of the rod thrust through its heart will pulse with lightning and resurrect this abomination of unlife.",
+					"These hulking undead monstrosities have been changed in numerous ways, as the humanoids used to enact these rituals are changed exponentially. They grew impressively large, reaching heights of 10-14 feet tall, and weighing well over hundreds of pounds. Their strength is exceptional enough to bend solid metal bars with minimal effort and they are hard to miss. Their postures become hunched as most of the mass of their forms resides in their upper bodies, and they are deceptively quick.",
+					"Object of Widespread Descrution",
+					"While these undead are rarely ever seen, -- as they are usually protecting mage's towers -- spotting one is said to be an omen of destruction, as these hulking humanoids will do everything in their power to crush anything that moves beneath their might. Deathly aggressive, the Shocking Zombie Brute lashes out at anything that remotely seems like a challenge. Like beasts, this undead has a similar hierarchy to that of wolves, in that should it ever travel with other undead, it is likely the leader as with it's limited intelligence \"Might makes Right.\""
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://giantbomb1.cbsistatic.com/uploads/original/0/967/816156-l4d_boss_art_tank.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Jw8T3bK.png",
+			"traitTags": [
+				"Damage Absorption",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Choir String",
+			"source": "MacekillsWork",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Knows and can speak all the languages of the consumed"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Unity",
+					"entries": [
+						"Born of foul magics, the unity of these poor souls have birthed a creature of agony. The number of it's form gives it advantage on all Wisdom (Perception) checks and has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Terrifying Insight",
+					"entries": [
+						"A creature that hits, or touches the Choir String gains insight into its very being. Catching glimpses of actual consciousness within and gaining the knowledge that this monstrosity is holding its passengers hostage. At the same time, the Choir String learns something about the assailant."
+					]
+				},
+				{
+					"name": "Snapped String",
+					"entries": [
+						"If a creature starts its turn within 10ft of the Choir String while Discordant Harmony is active, they must make a Wisdom Saving throw {@dc 14} or take 9 ({@damage 3d6}) Psychic damage on a failed save or half on a success. Creatures {@condition charmed} from Discordant Harmony's initial save automatically fail this save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Choir String make's two Grasping Limbs attacks."
+					]
+				},
+				{
+					"name": "Grasping Limbs",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage, and the creature is {@condition grappled} ({@dc 14} to escape). The Choir String can grapple up to 4 medium-sized creatures at any given time and cannot make an attack against another creature if it has 4 creatures {@condition grappled} without letting go of one first."
+					]
+				},
+				{
+					"name": "Discordant Harmony",
+					"entries": [
+						"The Choir String screams a horrifying tune. Every creature within 300ft. of it must make a Wisdom Saving throw {@dc 14} or become {@condition charmed}, however when {@condition charmed} in this way the creature is also {@condition incapacitated} until the song ends. The Choir String must take a bonus action on its subsequent turns to continue \"Singing\". The song ends if the Choir String is {@condition incapacitated}. If the {@condition charmed} target is more than 5 ft. away from the Choir String, the creature must move on its turn toward the Choir String by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the Choir String, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.",
+						"A target that successfully saves is immune to this Choir String's song for the next 24 hours. However, the strange discordant tune still harms them psychologically."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Consume",
+					"entries": [
+						"Should a creature be knocked to 0 hits within 5 feet of the choir String, it can use its reaction to consumes it and add to it's mass. A consumed creature is not killed, but added to the choir's unity. While a part of the Choir, the creature is considered {@condition incapacitated} but stabilized. The Choir heals 9 ({@dice 2d6 + 3}) hit points per assimilated creature. Should enough creatures be consumed, it becomes a Choir Chamber."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The Choir. \"Not much is known about the creatures that adventurers deem \"The Choir\", but many are chilled to the bone by their name alone. Those that have witnessed it first-hand and lived are content with never adventuring another day in their life; if it means even the smallest chance of never seeing that particular monstrosity again. I, however have never been more interested in such a thing.\"",
+					"\"I've found even more recent documentation on these creatures through detailed reports from scavenging parties and adventurers alike. Something unsettling seems to correlate between all of their accounts however, in that this creature's discordant screams rattled them to the bones. As if forced to watch some sort of unharmonized symphony. The most unnerving thing of all is that most of the time, these creatures were merely a plethora of fused humanoids. I fear whoever created these monsters - because they're certainly not natural! - seeks to enact an even more nefarious plan amongst the mases.\"",
+					"-Excerpt from Arch Magus Ashans Tome of Monstrosities",
+					"Born from experimentation. These monstrosities - amalgamation of humanoids and creatures alike, are the child of eccentric and sometimes forbidden magic that delves into what the arcane can truly do. While mages of all kinds did such things during the age of arcanum; much has changed since then, and many steps have been taken to not fall down the same path. Regardless, some might not head these words and tamper with the weave. The result of such a thing is The Choir and its many variants.",
+					"Seeking Harmony. Whatever arcane experimentation was used to create the initial fusion of humanoids, or animals of any kind and what the creation seeks in its endless agony, is harmony. After all, to be fused and connected with all those it assimilates in its path is pain unending; but in the hazy fog of its existence, the fragment of intelligence it wields hopes to lessen the burden with more souls. It is a shame that it doesn't know it is only making its existence even worse, as all those assimilated are still living. However, in the hive mind of this creature, they cannot escape and are forced to watch as innocent lives are added to the pile to experience the same agony.",
+					"Hope in the dark. While many presume this creature to be merely mindless and those assimilated effectively lost, reports from adventurers have stated these creatures being capable of coherent speech. Although it is reported that those who have heard it, describe it as haunting, as every living thing fused to it speaks as one. They even stated how it knew things about them no one should have known. A troubling notion. Nonetheless, there is a rumor of a way to either free those assimilated, or at least lay them to rest. Strangely, the adventurer said it called for a song that was pure and came form the depths of ones heart.",
+					"The Choir String. The choir String has ironically been named due to the number of humanoids fused together, and the fact that their \"Song\" is musical in nature. Based off the size of an Orchestra, the String represents the number of humanoids fused (being 12-21 usually) into one being. While these are the most common of the variants spotted, they're no less dangerous than the larger varieties.",
+					"The most dangerous thing about the Choir String is its voice. Given its slow movement, most adventurers can easily kite these creatures and take them down from afar, but its truly their song that is dangerous. For if it worms its way into your head, you'll find yourself willingly approaching it and listening to it until your die, or are knocked unconscious and added to the mix. Choir Chambers are created when Choir Strings assimilated enough humanoids to fit the requirements of an actual Orchestra Chamber."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/thething/images/a/a4/2011splitface.png/revision/latest?cb=20120413155846"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/E80K6hk.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Choir Chamber",
+			"source": "MacekillsWork",
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 75",
+				"average": 172
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Knows and can speak all the languages of the consumed"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Unity",
+					"entries": [
+						"Born of foul magics, the unity of these poor souls have birthed a creature of agony. The number of it's form gives it advantage on all Wisdom (Perception) checks and has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Terrifying Insight",
+					"entries": [
+						"A creature that hits, or touches the Choir Chamber gains insight into its very being. Catching glimpses of actual consciousness within and gaining the knowledge that this monstrosity is holding its passengers hostage. At the same time, the Choir Chamber learns something about the assailant."
+					]
+				},
+				{
+					"name": "Snapped String",
+					"entries": [
+						"If a creature starts its turn within 10ft of the Choir Chamber while Discordant Harmony is active, they must make a Wisdom Saving throw {@dc 16} or take 14 ({@damage 4d6}) Psychic damage on a failed save or half on a success. Creatures {@condition charmed} from Discordant Harmony's initial save automatically fail this save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Choir Chamber make's two Grasping Limbs attacks."
+					]
+				},
+				{
+					"name": "Grasping Limbs",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage, and the creature is {@condition grappled} ({@dc 16} to escape). The Choir Chamber can grapple up to 6 medium-sized creatures at any given time and cannot make an attack against another creature if it has 6 creatures {@condition grappled} without letting go of one first."
+					]
+				},
+				{
+					"name": "Discordant Harmony",
+					"entries": [
+						"The Choir Chamber screams a horrifying tune. Every creature within 600ft. of it must make a Wisdom Saving throw {@dc 16} or become {@condition charmed}, however when {@condition charmed} in this way the creature is also {@condition incapacitated} until the song ends. The Choir Chamber must take a bonus action on its subsequent turns to continue \"Singing\". The song ends if the Choir Chamber is {@condition incapacitated}. If the {@condition charmed} target is more than 5 ft. away from the Choir Chamber, the creature must move on its turn toward the Choir Chamber by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the Choir Chamber, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.",
+						"A target that successfully saves is immune to this Choir Chamber's song for the next 24 hours. However, the strange discordant tune still harms them psychologically."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Consume",
+					"entries": [
+						"Should a creature be knocked to 0 hits within 5 feet of the choir Chamber, it can use its reaction to consumes it and add to it's mass. A consumed creature is not killed, but added to the choir's unity. While a part of the Choir, the creature is considered {@condition incapacitated} but stabilized. The Choir heals 26 ({@dice 6d6 + 5}) hit points per assimilated creature. Should enough creatures be consumed, it becomes a Choir Symphony."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The Choir Chamber",
+					"Similar to the Choir String, the Choir Chamber is made up of a similar number of assimilated humanoids/animals. Ranging from 20 to 45 humanoids/animals fully fused. While the String was somewhat manageable by lower status adventurers, many are sadly enthralled by the Chamber's longer reach in its musical prowess. Where the String has been documented to enthrall individuals up to a range of roughly three hundred feet, the Chamber is capable of snagging passerbys at double the range of the String.",
+					"To expand even further, the Chamber seems to be physically stronger than its lesser variant, given the amount of humanoids its assimilated. With dozens of grasping limbs to keep courageous adventurers in place, the chamber will continue its discordant singing to eventually knock the humanoid unconscious and then proceed to add it to its growing mass. Unlike its lesser variant, the Chamber seems to be even more intelligent than before and can coherently carry conversations with those who choose to talk instead of fight. Although the combined voices and intent of this monstrosity is an entirely unknown aside from what has been previously known."
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/E80K6hk.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated"
+			]
+		}
+	]
+}
