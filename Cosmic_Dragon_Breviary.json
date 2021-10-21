@@ -1,0 +1,408 @@
+{
+	"siteVersion": "1.140.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CosmicDragonBreviary",
+				"abbreviation": "CDB",
+				"full": "Cosmic Dragon Breviary",
+				"url": "",
+				"authors": [
+					"Spectre Creations"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1634834671,
+		"dateLastModified": 1634834671
+	},
+	"monster": [
+		{
+			"name": "Sun Dragon Wyrmling",
+			"source": "CosmicDragonBreviary",
+			"size": "M",
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 35",
+				"average": 66
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 21,
+			"int": 11,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"dex": "+4",
+				"con": "+8",
+				"wis": "+6",
+				"int": "+3"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+6",
+				"intimidation": "+6"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"fire",
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"exhaustion",
+				"petrified"
+			],
+			"languages": [
+				"Celestial",
+				"Draconic"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Nebulous Burst",
+					"entries": [
+						"When the dragon dies, it explodes in a burst of radiant gases. Each creature within 10 feet of it must succeed on a {@dc 16} Constitution saving throw or be {@condition blinded} for 1 minute. A {@condition blinded} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Undying Light",
+					"entries": [
+						"The dragon perpetually sheds bright light in a 15-foot radius and dim light for an additional 15 feet. This light is sunlight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage, plus 5 ({@damage 2d4}) fire and radiant damage."
+					]
+				},
+				{
+					"name": "Plasma Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a corona of solar energy in a 15-foot cone. Each creature in that area must make a {@dc 16} Constitution saving throw, taking 10 ({@damage 3d6}) fire damage and 10 ({@damage 3d6}) radiant damage on a failed save, or half as much damage on a successful one. Whether the saving throw is successful or not, a target can’t take reactions until the end of the dragon’s next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/FUWqnjh.png",
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "Comet Dragon Wyrmling",
+			"source": "CosmicDragonBreviary",
+			"size": "S",
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d6 + 20",
+				"average": 37
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 120,
+				"canHover": false
+			},
+			"str": 15,
+			"dex": 21,
+			"con": 19,
+			"int": 16,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"dex": "+7",
+				"int": "+5",
+				"con": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"athletics": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"deafened",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Celestial",
+				"Draconic"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The comet dragon wyrmling doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Meteoric Torrent",
+					"entries": [
+						"Attacking {@condition prone} creatures doesn’t impose disadvantage on the dragon’s ranged attack rolls."
+					]
+				},
+				{
+					"name": "Outgas",
+					"entries": [
+						"The dragon emits a constant barrier of dust and debris. The area within 10 feet of the dragon is lightly obscured and is difficult terrain for all creatures that it chooses. If the dragon takes radiant damage, additional debris is flung from its body; until the dragon uses its Meteor Breath, a creature affected by this difficult terrain must spend 3 feet of movement for every 1 foot it moves in the area."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Spit Meteor",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/120 ft., one target. {@h}7 ({@damage 1d4 + 5}) bludgeoning damage, plus 2 ({@damage 1d4}) fire damage."
+					]
+				},
+				{
+					"name": "Meteor Breath {@recharge 5}",
+					"entries": [
+						"The dragon unleashes a barrage of meteors in a 30-foot line that is 5 feet wide. Each creature in that line must make a {@dc 14} Dexterity saving throw, taking 10 ({@damage 3d6}) bludgeoning damage and 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one. In addition, the dragon’s debris ignites (see Outgas trait). Until the start of the dragon’s next turn, whenever a creature other than the dragon enters the area for the first time on a turn or starts its turn there, it takes 2 ({@damage 1d4}) fire damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/sZcs300.png",
+			"traitTags": [
+				"Flyby"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Nebula Dragon Wyrmling",
+			"source": "CosmicDragonBreviary",
+			"size": "M",
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 24",
+				"average": 51
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 18,
+			"int": 20,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"dex": "+5",
+				"int": "+7",
+				"con": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"stealth": "+5",
+				"arcana": "+7",
+				"deception": "+3"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"petrified"
+			],
+			"languages": [
+				"Celestial",
+				"Draconic"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dragon’s innate spellcasting ability is Intelligence (spell save {@dc 15}). The dragon can innately cast the following spells, requiring no material components:",
+						"At will: minor illusion",
+						"1/day each: disguise self, fog cloud"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Interstellar Sight",
+					"entries": [
+						"Dust, fog, snow, and other particles suspended in the air don’t impede the dragon’s vision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Phantasmal Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a cloud of dust and ionized gas in a 15-foot cone. The cloud remains until the end of the dragon’s next turn, its area is lightly obscured, and creatures have disadvantage on Intelligence (Investigation) checks to discern illusions within the cloud.",
+						"Each creature in the cloud when it appears must make a {@dc 15} Wisdom saving throw as the dragon magically crafts illusory manifestations of each creature’s deepest fears within the cloud. On a failed save, a target takes 13 ({@damage 3d8}) psychic damage and is {@condition stunned} until the end of the dragon’s next turn. On a successful save, a target takes half as much damage and isn’t {@condition stunned}."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/mjLIyIa.png",
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		}
+	]
+}
