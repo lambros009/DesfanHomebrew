@@ -1,0 +1,408 @@
+{
+	"siteVersion": "1.142.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Theophany",
+				"abbreviation": "THEO",
+				"full": "Theophany",
+				"url": "",
+				"authors": [
+					"Lambros009"
+				],
+				"convertedBy": [
+					"Lambros009"
+				]
+			}
+		],
+		"dateAdded": 1638113395,
+		"dateLastModified": 1638113395
+	},
+	"spell": [
+		{
+			"name": "Blinding Ray",
+			"source": "Theophany",
+			"level": 3,
+			"school": "V",
+			"subschools": [
+				"Prismatic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create three rays of radiant energy and hurl them at targets within range. You can hurl them at one target or several.",
+				"Make a ranged spell attack for each ray. On a hit, the target takes {@damage 2d8} radiant damage and must succeed on a Constitution saving throw or be {@condition blinded} until the end of its next turn. If all rays hit the same target, and it fails its saving throw, the creature is {@condition blinded} for 1 minute instead."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you create one additional ray for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "The Prism",
+							"source": "Theophany"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Radiant Bolt",
+			"source": "Theophany",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a ray of light at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} radiant damage and begins shedding bright light in a 10-foot radius and dim light for an additional 10 feet. The light can be colored as you like. Completely covering the creature with something opaque blocks the light."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Prismatic Bolt",
+			"source": "Theophany",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a multicolored ray of light at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} damage. The type of damage is determined by the result of the first damage die rolled:",
+				"1. Force damage, 2. Psychic damage, 3. Radiant damage, 4. Acid damage, 5. Thunder damage, 6. Lightning damage, 7. Cold damage, 8. Fire damage"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"psychic",
+				"radiant",
+				"thunder"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"As an optional rule, the DM could rule that each damage die deals seperate types of damage, allowing the cantrip to deal additional types of damage as the character level increases."
+				]
+			}
+		},
+		{
+			"name": "Faerie Burst",
+			"source": "Theophany",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of pixie dust"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You allow a burst of fey energy to emerge from your hand and fill the air in a 30-foot radius. When you do so, the presence of magic is briefly outlined in glittery spectacle, although you are unable to determine the type or nature of magic.",
+				"Any {@condition invisible} creatures in the area must succeed on a Constitution saving throw, or the outline of their form briefly glitters as well. A creature other than you that is exposed to this spell more than once over the course of a minute must succeed on a Constitution saving throw or be {@condition blinded} until the end of its next turn."
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dispelling Strike",
+			"source": "Theophany",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra {@damage 2d12} force damage to the target. Additionally, any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the extra damage dealt by the attack increases by {@dice 1d12} for each slot level above 3rd. Additionally, when you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"abilityCheck": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Finger Break",
+			"source": "Theophany",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"By using alvaran magic to sense a creature's skeletal structure and manipulate it, you attempt to crush the phalanges of one of its hands. The creature must succeed on a Constitution saving throw or take {@damage 8d4} bludgeoning damage, taking half as much damage on a success. On a failure, a creature is also unable to perform somatic components or otherwise make use of their hand until they complete a long rest or they receive magical healing equal to the damage that was dealt."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 2d4} for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
